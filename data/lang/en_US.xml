@@ -13,7 +13,7 @@
 		<text id="all">全部</text>
 		<text id="equipment">装备</text>
 		<text id="attack">攻击:</text>
-		<text id="range">Range:</text>
+		<text id="range">范围:</text>
 		<text id="defense">防御:</text>
 		<text id="cut">砍:</text>
 		<text id="mine">矿:</text>
@@ -100,8 +100,8 @@
 		<text id="oil">原油</text>
 		<text id="titanium">钛</text>
 		<text id="uranium">铀</text>
-		<text id="iron_bar">钢锭</text>
-		<text id="steel_bar">铁锭</text>
+		<text id="iron_bar">铁锭</text>
+		<text id="steel_bar">钢锭</text>
 		<text id="gold_bar">金条</text>
 		<text id="meat">肉</text>
 		<text id="fruit">果实</text>
@@ -125,18 +125,18 @@
 		<text id="stone_pickaxe">石头凿子</text>
 		<text id="coin_purse">钱包</text>
 		<text id="iron_pickaxe">鹤嘴锄</text>
-		<text id="iron_sword">钢剑</text>
-		<text id="iron_armor">钢盔甲</text>
+		<text id="iron_sword">铁剑</text>
+		<text id="iron_armor">铁盔甲</text>
 		<text id="steel_pickaxe">钢镐</text>
-		<text id="steel_sword">铁剑</text>
-		<text id="steel_armor">铁盔甲</text>
+		<text id="steel_sword">钢剑</text>
+		<text id="steel_armor">钢盔甲</text>
 		<text id="bow">弓</text>
 		<text id="arrow">弓矢</text>
 		<text id="backpack">背包</text>
 		<text id="mega_backpack">超级背包</text>
 		<text id="magic_backpack">魔法背包</text>
 		<text id="magic_box">魔法书</text>
-		<text id="cloth">衣服</text>
+		<text id="cloth">布</text>
 		<text id="net">网</text>
 		<text id="berries">浆果</text>
 		<text id="red_berries">红浆果</text>
@@ -324,7 +324,7 @@
 		<text id="storehouse1">你把该用的东西都准备好了？厉害啊！</text>
 		<text id="storehouse2">咱们开始建 [color=770000]仓库[/color] !</text>
 		<text id="storehouse3">看啊！ 是不是很有成就感？</text>
-		<text id="storehouse4">耶！事实上，他们会很有用。 咱们现在可以忽略因为拿太多东西造成的疲劳疲劳啦！</text>
+		<text id="storehouse4">耶！事实上，他会很有用的。 咱们现在可以避免因为拿太多东西造成的疲劳啦！</text>
 		<text id="farmer">怎们应该跟 [color=770000][tile=farmer] 农民[/color]达成共识，我打赌他能帮咱们种出很多美味的食物。</text>
 		<text id="miner">你看到那个从土里钻出来的 [color=770000][tile=miner] 矿工[/color] 了么？你去瞧瞧她吧。</text>
 		<text id="kitchen1">你觉得建一个 [color=770000]厨房[/color]怎么样？ [item=meat] 很好，但是做熟的更棒！</text>
@@ -336,7 +336,7 @@
 		<text id="kitchen7">看来万事俱备了，咱们把 [color=770000]厨房[/color] 升级咯！</text>
 		<text id="kitchen8">尝试一些新食谱！快赶上五星饭店了！</text>
 		<text id="farm">老兄，我饿了，希望咱们能赶紧把 [color=770000]农场[/color] 建好！</text>
-		<text id="backpack1">嘿，为[color=770000]熔炉[/color]搬那么多 [item=coal] 不累么？我拿我的 [item=backpack] 换 [var=quest.backpack.meat] [item=meat].</text>
+		<text id="backpack1">嘿，为[color=770000]熔炉[/color]搬那么多 [item=coal] 不累么？我拿我的 [item=backpack] 换 [var=quest.backpack.meat] 个 [item=meat].</text>
 		<text id="backpack2">我要弄点 [item=meat], 但是我的 [item=stone_axe]已经给你了。</text>
 		<text id="backpack3">太棒了！谢谢你的 [item=meat]! 这是我许诺的 [item=backpack].</text>
 	</section>
@@ -349,7 +349,7 @@
 		<text id="farm3">通过砍树可以得到 [item=wood] 和 [item=fruit] 。</text>
 		<text id="farm4">如果你想多种些, 可以在谷仓建起四块庄稼地或者果园</text>
 		<text id="farm5">瞧咱们帅气的 [color=770000]农场[/color]! 它和我以前在家里种的一样好。!</text>
-		<text id="kitchen">生 [item=wheat] 不是很好吃，我打赌如果你和 [color=770000][tile=builder] 建筑师[/color] 建一座[color=770000]Kitchen[/color]可以就可以做的更好吃了！</text>
+		<text id="kitchen">生 [item=wheat] 不是很好吃，我打赌如果你和 [color=770000][tile=builder] 建筑师[/color] 建一座[color=770000]厨房[/color]可以就可以做的更好吃了！</text>
 		<text id="pen1">你知道 [color=770000]农场[/color] 需要什么？ 一些牲畜！抓点来怎么样？ [color=770000][tile=boar] 公猪[/color] 用[color=770000]市场[/color]的 [item=net] 来抓？</text>
 		<text id="pen2">我要 [var=quest.pen.pig] [item=pig] 和 [var=quest.pen.wood] [item=wood]来建一个[color=770000]棚子[/color] 。</text>
 		<text id="pen3">现在，这些[item=pig]是不是看起来更肥胖多汁了 ？</text>
@@ -386,7 +386,7 @@
 		<text id="introduce2">我可能是借走了一些东西，但是，听着！我会以我的服务作为回报！我有和其他岛的商人做交易的路子！</text>
 		<text id="introduce3">商人？还有别的幸存者？</text>
 		<text id="introduce4">是的，但是我需要 [var=quest.market.gold_bar] [item=gold_bar]来说服他们过来</text>
-		<text id="introduce5">我们刚抓住你偷东西你还要指控我们？！</text>
+		<text id="introduce5">我们刚抓住你偷东西你还要忽悠我们？！</text>
 		<text id="introduce6">一码说一码，这是生意。我的开价是 [var=quest.market.gold_bar] [item=gold_bar]把这座岛加入到通商路线上。</text>
 		<text id="introduce7">好吧，如果外头有其他的幸存者，和他们交易可以把我们从这岛上弄走。</text>
 		<text id="introduce8">对不起，我不能相信一个贼，离开这个岛永远别再回来。</text>
@@ -449,8 +449,8 @@
 		<text id="fourth1">那么告诉我们其他生还者的事情吧。</text>
 		<text id="fourth2">我们大部分人零散地分布在不同的小岛上，但是有的岛有更多的幸存者甚至更多的工种。</text>
 		<text id="fourth3">我甚至还听说有的岛有完整的船。</text>
-		<text id="fourth4">它还能飞起来么？</text>
-		<text id="fourth5">就像我说的，咱们听到的都是传闻，但是只要可能，就是致命的，做好留在这个星球，看起来他们不在意咱们在这里。</text>
+		<text id="fourth4">它还能航行么？</text>
+		<text id="fourth5">就像我说的，咱们听到的都是传闻，但是只要可能，就是值得试一试，做好留在这个星球的准备，看起来他们不在意咱们呆在这里。</text>
 	</section>
 	<section id="options">
 		<text id="options">选项</text>

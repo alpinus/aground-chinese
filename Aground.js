@@ -66194,7 +66194,7 @@
     com_davidmaletz_mining_ui_Controls.KEY_CHANGED = "key_changed";
     com_davidmaletz_mining_ui_Controls.keys = ["left", "right", "up", "down", "select", "cancel", "inventory", "quest", "hotkey1", "hotkey2"];
     com_davidmaletz_mining_ui_CraftingWindow.PAD = 4;
-    com_davidmaletz_mining_ui_Credits.credits = "Programming & Design\nDavid Maletz\n\nArt\nAaron Norell\n\nSound & Music\nChase Bethea\n\n(c) Fancy Fish Games 2017\n(c) SnoBox Studio 2017\n\nThank you for playing!\nWe hope to see you in the new world!";
+    com_davidmaletz_mining_ui_Credits.credits = "Programming & Design\nDavid Maletz\n\nArt\nAaron Norell\n\nSound & Music\nChase Bethea\n\n中文版汉化\n冻豺\n\n(c) Fancy Fish Games 2017\n(c) SnoBox Studio 2017\n\nThank you for playing!\nWe hope to see you in the new world!";
     com_davidmaletz_mining_ui_DialogueBox.WIDTH = 200;
     com_davidmaletz_mining_ui_DialogueBox.PAD = 4;
     com_davidmaletz_mining_ui_EatPrompt.ICON_W = 8;
