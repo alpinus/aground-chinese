@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<recipes>
+	<recipe id="fuel_wood" fuel="10" type="fuel"><item id="wood" /></recipe>
+	<recipe id="fuel_coal" fuel="20" type="fuel"><item id="coal" /></recipe>
+	<recipe id="fuel_oil" fuel="60" type="fuel2"><item id="oil" /></recipe>
+	<recipe id="fuel_uranium" fuel="200" type="fuel2"><item id="uranium" /></recipe>
+	<recipe id="smelt_iron" creates="iron_bar" type="smelter">
+		<item id="iron" count="2" />
+	</recipe>
+	<recipe id="smelt_steel" creates="steel_bar" type="smelter">
+		<item id="iron_bar" count="1" />
+		<item id="coal" count="2" />
+	</recipe>
+	<recipe id="smelt_gold" creates="gold_bar" type="smelter">
+		<item id="gold" count="2" />
+	</recipe>
+	<recipe id="craft_fence" creates="fence" type="workshop">
+		<item id="wood" count="2" />
+	</recipe>
+	<recipe id="craft_torch" creates="torch" type="workshop">
+		<item id="wood" count="1" />
+		<item id="coal" count="1" />
+	</recipe>
+	<recipe id="craft_trap" creates="trap" type="workshop">
+		<item id="wood" count="1" />
+		<item id="iron" count="1" />
+	</recipe>
+	<recipe id="craft_arrow" creates="arrow" type="workshop">
+		<item id="wood" count="1" />
+	</recipe>
+	<recipe id="craft_bow" creates="bow" type="workshop">
+		<item id="wood" count="4" />
+		<item id="iron_bar" count="1" />
+	</recipe>
+	<recipe id="craft_iron_pickaxe" creates="iron_pickaxe" type="workshop">
+		<item id="iron_bar" count="3" />
+	</recipe>
+	<recipe id="craft_iron_sword" creates="iron_sword" type="workshop">
+		<item id="iron_bar" count="2" />
+	</recipe>
+	<recipe id="craft_iron_armor" creates="iron_armor" type="workshop">
+		<item id="iron_bar" count="4" />
+	</recipe>
+	<recipe id="craft_steel_pickaxe" creates="steel_pickaxe" type="workshop">
+		<item id="steel_bar" count="3" />
+	</recipe>
+	<recipe id="craft_steel_sword" creates="steel_sword" type="workshop">
+		<item id="steel_bar" count="2" />
+	</recipe>
+	<recipe id="craft_steel_armor" creates="steel_armor" type="workshop">
+		<item id="steel_bar" count="4" />
+	</recipe>
+	<recipe id="cook_steak" creates="steak" type="kitchen">
+		<item id="meat" count="1" />
+	</recipe>
+	<recipe id="cook_bread" creates="bread" type="kitchen">
+		<item id="wheat" count="2" />
+	</recipe>
+	<recipe id="cook_hamburger" creates="hamburger" type="kitchen">
+		<item id="meat" count="1" /><item id="bread" count="2" />
+	</recipe>
+	<recipe id="cook_pie" creates="pie" type="kitchen">
+		<item id="wheat" count="1" /><item id="berries" count="2" />
+	</recipe>
+	<recipe id="cook_pancakes" creates="pancakes" type="kitchen">
+		<item id="wheat" count="1" /><item id="milk" count="1" /><item id="eggs" count="1" />
+	</recipe>
+	<recipe id="make_cheese" creates="cheese" type="kitchen2">
+		<item id="milk" count="2" />
+	</recipe>
+	<recipe id="cook_pizza" creates="pizza" type="kitchen2" achievement="pizza">
+		<item id="wheat" count="2" /><item id="cheese" count="1" />
+	</recipe>
+	<recipe id="cook_omelette" creates="omelette" type="kitchen2">
+		<item id="eggs" count="2" /><item id="meat" count="1" /><item id="cheese" count="1" />
+	</recipe>
+	<recipe id="cook_cheeseburger" creates="cheeseburger" type="kitchen2">
+		<item id="meat" count="1" /><item id="bread" count="2" /><item id="cheese" count="1" />
+	</recipe>
+	<recipe id="cook_cheeseburger2" creates="cheeseburger" type="kitchen2">
+		<item id="hamburger" count="1" /><item id="cheese" count="1" />
+	</recipe>
+	<recipe id="cook_cake" creates="cake" type="kitchen2">
+		<item id="wheat" count="2" /><item id="milk" count="1" /><item id="eggs" count="1" /><item id="sugar" count="1" />
+	</recipe>
+	<recipe id="cook_candy_apple" creates="candy_apple" type="kitchen2">
+		<item id="fruit" count="1" /><item id="sugar" count="1" />
+	</recipe>
+	<recipe id="wheat_field" structure="wheat" type="farm">
+		<item id="wheat" count="12" />
+	</recipe>
+	<recipe id="orchard" structure="orchard" type="farm" achievement="orchard">
+		<item id="fruit" count="4" /><item id="wood" count="4" />
+	</recipe>
+	<recipe id="boat" creates="boat" type="dock">
+		<item id="wood" count="9" />
+		<item id="steel_bar" count="9" />
+		<item id="cloth" count="9" />
+		<item id="net" count="9" />
+	</recipe>
+	<recipe id="make_cloth" creates="cloth" type="dock">
+		<item id="wheat" count="4" />
+	</recipe>
+	<recipe id="make_net" creates="net" type="dock">
+		<item id="gold" count="1" />
+	</recipe>
+	<recipe id="make_attack_potion" creates="attack_potion" type="lab">
+		<item id="red_berries" count="5" />
+	</recipe>
+	<recipe id="make_defense_potion" creates="defense_potion" type="lab">
+		<item id="iron" count="2" />
+	</recipe>
+	<recipe id="make_health_potion" creates="health_potion" type="lab">
+		<item id="dragonblood" count="1" />
+		<item id="red_berries" count="2" />
+	</recipe>
+	<recipe id="make_stamina_potion" creates="stamina_potion" type="lab">
+		<item id="dragonblood" count="1" />
+		<item id="berries" count="4" />
+	</recipe>
+	<recipe id="make_speed_potion" creates="speed_potion" type="lab">
+		<item id="dragonblood" count="1" />
+		<item id="eggs" count="2" />
+	</recipe>
+	<recipe id="make_endurance_potion" creates="endurance_potion" type="lab">
+		<item id="dragonblood" count="1" />
+		<item id="meat" count="2" />
+	</recipe>
+</recipes>

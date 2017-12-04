@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<enemy id="rat" tile="rat" health="1" damage="0" type="rat">
+		<loot p="2" />
+		<loot id="meat" p="1" />
+	</enemy>
+	<enemy id="boar" tile="boar" health="4" damage="2" range="7" type="boar" trapped="pig" kill_achievement="boar">
+		<loot p="4" />
+		<loot id="eggs" p="1" />
+		<loot id="meat" p="16" />
+	</enemy>
+	<enemy id="wyrm" tile="wyrm" health="5" defense="2" damage="6" type="wyrm" trapped="wyrm" kill_achievement="wyrm" trap_achievement="capture_wyrm">
+		<loot id="dragonblood" />
+	</enemy>
+	<enemy id="golem" tile="golem" health="6" defense="1" damage="4" type="golem" kill_achievement="golem">
+		<loot id="iron" p="4" />
+		<loot id="gold" p="4" />
+		<loot id="diamond" p="16" />
+		<loot id="titanium" p="1" />
+	</enemy>
+</info>

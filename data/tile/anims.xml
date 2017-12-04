@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<animations>
+	<animation id="single" count="1" />
+	<animation id="crack" count="7" shift="1">
+		<frame visible="false" />
+	</animation>
+	<animation id="smoke" count="8" />
+	<animation id="ore" count="9" />
+	
+	<animation id="player.idle">
+		<frame x="0" y="0" length="4" />
+		<frame x="1" y="0" length="2" />
+		<frame x="0" y="0" length="32" />
+	</animation>
+	<animation id="player.walk" count="10" x="2" y="0" />
+	<animation id="player.walk.heavy" count="10" x="6" y="3" />
+	<animation id="player.mine" count="1" length="10" x="4" y="1" />
+	<animation id="player.mine2" count="1" length="10" x="5" y="1" />
+	<animation id="player.mine3" count="10" x="6" y="1" shift="2" />
+	<animation id="player.hit" count="6" x="0" y="3" />
+	<animation id="player.death" count="7" y="5">
+		<frame x="2" y="5" count="3" />
+		<frame x="7" y="5" count="10" />
+		<frame x="1" y="7" length="4" />
+		<frame x="2" y="7" count="2" />
+		<frame x="4" y="7" length="15" />
+	</animation>
+	<animation id="equipment.stone_axe" shift="2" >
+		<frame x="0" offsetX="-5" />
+		<frame x="1" offsetX="-7" />
+		<frame x="2" offsetX="-8" />
+		<frame x="3" offsetX="-5" count="2" />
+		<frame x="5" count="5" />
+	</animation>
+	<animation id="equipment.stone_pickaxe" shift="2" >
+		<frame x="0" offsetX="-4" />
+		<frame x="1" offsetX="-7" />
+		<frame x="2" offsetX="-8" />
+		<frame x="3" offsetX="-4" count="2" />
+		<frame x="5" count="5" />
+	</animation>
+	<animation id="equipment.iron_pickaxe" shift="2" >
+		<frame x="0" offsetX="-4" />
+		<frame x="1" offsetX="-7" />
+		<frame x="2" offsetX="-3" count="3" />
+		<frame x="5" count="5" />
+	</animation>
+	<animation id="equipment.steel_pickaxe" equals="equipment.iron_pickaxe" />
+	<animation id="equipment.iron_sword" shift="2">
+		<frame x="0" offsetX="-8" />
+		<frame x="1" offsetX="-10" count="2" />
+		<frame x="3" offsetX="-7" count="2" />
+		<frame x="5" count="5" />
+	</animation>
+	<animation id="equipment.steel_sword" shift="2" >
+		<frame x="0" offsetX="-10" count="5" />
+		<frame x="5" count="5" />
+	</animation>
+	<animation id="equipment.bow">
+		<frame x="4" count="2" />
+		<frame x="0" count="2" length="3" />
+		<frame x="2" count="2" />
+	</animation>
+	<animation id="equipment.walk">
+		<frame x="0" />
+		<frame x="0" offsetX="-1" length="3" />
+		<frame x="0" length="2" />
+		<frame x="0" offsetX="-1" length="3" />
+		<frame x="0" />
+	</animation>
+	
+	<animation id="rat.idle" count="8">
+		<frame x="8" />
+		<frame x="1" count="7" />
+		<frame x="21" count="9" />
+		<frame x="8" />
+		<frame x="1" count="7" />
+		<frame x="0" count="8" />
+	</animation>
+	<animation id="rat.hit" x="9" count="2">
+		<frame x="2" count="2" />
+		<frame x="11" count="2" />
+		<frame x="6" count="4" />
+	</animation>
+	<animation id="rat.walk" count="8" x="13" />
+	
+	<animation id="boar.idle" count="9">
+		<frame count="2" />
+		<frame x="1" y="2" />
+		<frame x="3" y="0" count="6" />
+		<frame count="9" />
+		<frame count="9" />
+	</animation>
+	<animation id="boar.roar" count="4">
+		<frame x="2" y="2" count="5" />
+	</animation>
+	<animation id="boar.walk" count="7" x="3" y="3" />
+	<animation id="boar.attack" count="6" x="2" y="5" />
+	<animation id="boar.hit" count="5" x="0" y="7" />
+	
+	<animation id="wyrm.idle" equals="single" />
+	<animation id="wyrm.walk" count="6" x="0" y="0" />
+	<animation id="wyrm.dig" count="5" x="2" y="1" />
+	<animation id="wyrm.attack" count="3" x="3" y="2" />
+	<animation id="wyrm.hit" count="3" x="2" y="3">
+		<frame x="0" y="0" length="2" />
+	</animation>
+	<animation id="wyrm.recharge" count="1" length="10" x="0" y="0" />
+	
+	<animation id="golem.idle">
+		<frame x="0" y="1" length="4" />
+		<frame x="1" y="1" length="2" />
+		<frame x="0" y="1" length="32" />
+	</animation>
+	<animation id="golem.walk" x="3" y="1" count="6" />
+	<animation id="golem.form" count="5" x="0" y="0" />
+	<animation id="golem.attack" count="5" x="1" y="3" />
+	<animation id="golem.hit" count="3" x="2" y="4">
+		<frame x="2" y="1" length="2" />
+	</animation>
+	<animation id="golem.roar" count="1" length="10" x="2" y="1" />
+	
+	<animation id="hut.idle" count="1" x="3" y="0" />
+	<animation id="hut.closing" count="4" />
+	<animation id="hut.opening" count="4" reverse="true" />
+	<animation id="hut.fire" count="3" y="1" />
+	
+	<animation id="storehouse.idle" equals="single" />
+	<animation id="storehouse.closing" count="9" reverse="true" />
+	<animation id="storehouse.opening" count="9" />
+	
+	<animation id="blood" count="5" />
+	<animation id="meat" count="5" x="-4" />
+	
+	<animation id="tree.grow" count="4" />
+	<animation id="tree.hit" countY="8" x="4" shift="1">
+		<frame x="3" y="0" length="2" />
+	</animation>
+	<animation id="bush.grow" count="4" />
+	<animation id="red_bush.grow" count="5" />
+	
+	<animation id="smelter.off" equals="single" />
+	<animation id="smelter.on" count="4" x="1" y="0" />
+	<animation id="smelter.smelt" count="12" x="2" y="1" />
+	
+	<animation id="workshop.idle" equals="single" />
+	<animation id="workshop.on" count="8" x="1" y="0" />
+	
+	<animation id="kitchen.close.off" equals="single" />
+	<animation id="kitchen.open.off" count="1" x="1" y="0" />
+	<animation id="kitchen.close.on" count="4" x="2" y="0" />
+	<animation id="kitchen.open.on" count="4" x="1" y="1" />
+	<animation id="kitchen2.off" equals="single" />
+	<animation id="kitchen2.on" count="8" x="1" y="0" />
+	
+	<animation id="farm.idle" count="1" x="5" y="0" />
+	<animation id="farm.closing" count="6" />
+	<animation id="farm.opening" count="6" reverse="true" />
+	
+	<animation id="dockhouse.idle" equals="single" />
+	<animation id="dockhouse.closing" count="9" reverse="true" />
+	<animation id="dockhouse.opening" count="9" />
+	
+	<animation id="market.idle">
+		<frame x="0" y="0" length="16" />
+		<frame x="1" y="0" length="2" />
+		<frame x="2" y="0" length="16" />
+		<frame x="3" y="0" length="2" />
+	</animation>
+	<animation id="market.talk" count="8" x="4" />
+	
+	<animation id="wheat.idle" count="20">
+		<frame x="3" y="5" length="32" />
+	</animation>
+	<animation id="wheat.grow" count="3" x="0" y="5" />
+	<animation id="wheat.harvest" count="40" x="0" y="6" />
+	<animation id="orchard.grow" count="5" />
+	<animation id="orchard.idle" count="1" x="5" />
+	<animation id="boat.empty" equals="single" />
+	<animation id="boat.sail" count="10" x="2" />
+	
+	<animation id="pig">
+		<frame count="4" />
+		<frame x="4"  />
+		<frame x="1" count="3" />
+		<frame x="5" count="4" />
+		<frame count="4" />
+	</animation>
+	<animation id="magic_box" count="3" length="2" />
+	<animation id="cocoon" count="6" />
+	<animation id="torch" count="4" />
+	<animation id="dragon.fire" count="24" />
+	<animation id="trap.place" count="2" length="4" />
+	<animation id="trap.spring" x="2" count="5" />
+	<animation id="trap.below_surface" equals="single" />
+	
+	<animation id="npc.idle">
+		<frame x="0" y="0" length="4" />
+		<frame x="1" y="0" length="2" />
+		<frame x="0" y="0" length="32" />
+		<frame x="2" y="0" count="4" />
+		<frame x="0" y="0" length="12" />
+	</animation>
+	<animation id="npc.talk" count="4" x="6" y="0">
+		<frame x="0" y="0" length="4" />
+		<frame x="1" y="0" length="2" />
+		<frame x="0" y="0" length="4" />
+		<frame x="2" y="0" count="4" />
+	</animation>
+	<animation id="npc.walk" count="10" x="10" y="0" />
+	<animation id="builder.corpse" count="12" x="20" />
+	<animation id="miner.mine" count="1" length="10" x="20">
+		<append tile="miner_pickaxe" animation="equipment.stone_pickaxe" />
+	</animation>
+	<animation id="farmer.hoe" count="5" x="20" />
+	
+	<animation id="alchemist.idle" count="8" />
+	<animation id="alchemist.talk" count="4" x="8" />
+	<animation id="alchemist.quest" count="15" x="12" />
+	<animation id="alchemist.craft" count="53" x="27" />
+	<animation id="lab.idle" count="11" />
+	
+	<animation id="death" count="10">
+		<frame visible="false" />
+	</animation>
+	
+	<animation id="sun" count="10" />
+	
+	<animation id="achievement_flash" count="7" x="1">
+		<frame visible="false" />
+	</animation>
+	
+	<animation id="seagull.walk" count="7" />
+	<animation id="seagull.fly" x="7" count="9" />
+	
+	<animation id="bird.idle">
+		<frame x="1" y="0" length="4" />
+		<frame x="0" y="0" length="2" />
+		<frame x="1" y="0" length="16" />
+		<frame x="9" y="0" length="4" />
+		<frame x="1" y="0" length="16" />
+		<frame x="10" y="0" length="2" />
+		<frame x="1" y="0" length="2" />
+		<frame x="10" y="0" length="2" />
+	</animation>
+	<animation id="bird.hop" x="1" count="8" />
+	<animation id="bird.leap" x="11" count="3" />
+	<animation id="bird.land" x="11" count="3" reverse="true" />
+	<animation id="bird.fly" x="14" count="2" />
+</animations>

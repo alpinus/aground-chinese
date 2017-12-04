@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<structures>
+	<structure id="hut" width="60" height="55" image="hut.png">
+		<operate>
+			<action>this.loopAnimation("fire"); this.playSFX("fire");</action>
+			<choose>
+				<scene id="hut" show="second" with="fade" if="player.getItemCount('stone_pickaxe') > 0 && !getFlag('miner_hut')">
+					<action>setFlag('miner_hut', true);</action>
+				</scene>
+				<scene id="hut" show="third" with="fade" if="player.hasQuest('farm') && getFlag('miner_hut') && !getFlag('farmer_hut')">
+					<action>setFlag('farmer_hut', true);</action>
+				</scene>
+				<scene id="hut" show="fourth" with="fade" if="getVar('trader_steal') == 5 && getFlag('miner_hut') && getFlag('farmer_hut')">
+					<action>setVar('trader_steal', 6);</action>
+				</scene>
+			</choose>
+			<action>player.restoreStamina();</action><save />
+		</operate>
+		<exit><action>this.stopSFX()</action></exit>
+	</structure>
+	<structure id="storehouse" width="66" height="70" image="storehouse.png" type="storehouse">
+		<operate>
+			<choose>
+				<section if="getVar('trader_steal') > 1 && getVar('trader_steal') < 4 && player.questComplete('workshop') && !player.hasQuest('market')">
+					<action>setVar('trader_steal', 4);</action>
+					<dialogue section="trader" id="caught" />
+					<section with="fade">
+						<facing object="player" dir="right" />
+						<!-- NOTE: this line is to remove a duplicate trader for old saves that placed the trader at (6, -1) before this event. -->
+						<action>var trader = player.area.getObjectOnLayer(6, -1, ObjectLayer.NPC_LAYER); if(trader != null) player.area.removeObject(trader);</action>
+						<object id="trader" x="player.tile_x+1" />
+					</section>
+					<dialogue section="trader" id="introduce1" speaker="player" />
+					<dialogue section="trader" id="introduce2" speaker="trader" />
+					<dialogue section="trader" id="introduce3" speaker="player" />
+					<dialogue section="trader" id="introduce4" speaker="trader" />
+					<dialogue section="trader" id="introduce5" speaker="player" />
+					<menu section="trader" yalign="0.75">
+						<dialogue section="trader" id="introduce6" speaker="trader" />
+						<choice id="accept">
+							<action>setVar('trader_steal', 5);</action>
+							<quest id="market" ask="false" />
+							<dialogue section="trader" id="introduce7" speaker="player" />
+						</choice>
+						<choice id="reject">
+							<dialogue section="trader" id="introduce8" speaker="player" />
+							<dialogue section="trader" id="introduce9" speaker="trader" />
+							<lerp object="trader" alpha="0" seconds="0.25" />
+							<remove object="trader" />
+							<dialogue section="player" id="dock1" />
+							<dialogue section="player" id="dock2" />
+							<quest id="dock2" ask="false" />
+						</choice>
+					</menu>
+					<stop/>
+				</section>
+				<function object="this" run="stealItem" if="getVar('trader_steal') < 3 && player.questComplete('smelter') && Math.random() < 0.75">
+					<action>setVar('trader_steal', getVar('trader_steal')+1);</action>
+				</function>
+			</choose>
+		</operate>
+		<enter><action>this.playSFX("rock_door", 1);</action></enter>
+		<exit><action>this.playSFX("rock_door", 1);</action></exit>
+	</structure>
+	<structure id="workshop" width="65" height="35" image="workshop.png" type="crafting">
+		<recipe type="workshop" />
+		<enter><action>this.loopAnimation("on")</action></enter>
+		<exit><action>this.loopAnimation("idle")</action></exit>
+		<craft><action>this.playSFX("workshop", 1);</action></craft>
+	</structure>
+	<structure id="smelter" width="68" height="50" image="smelter.png" type="smelter">
+		<recipe type="fuel" />
+		<recipe type="smelter" />
+	</structure>
+	<structure id="kitchen" width="73" height="72" image="kitchen.png" type="kitchen" animation="kitchen" openable="true">
+		<recipe type="fuel" />
+		<recipe type="kitchen" />
+	</structure>
+	<structure id="kitchen2" width="73" height="80" image="kitchen2.png" type="kitchen" animation="kitchen2">
+		<recipe type="fuel" />
+		<recipe type="kitchen" />
+		<recipe type="kitchen2" />
+	</structure>
+	<structure id="farm" width="104" height="75" image="farm.png" type="farm" upgrades="4">
+		<enter><action>this.playSFX("rock_door", 1);</action></enter>
+		<exit><action>this.playSFX("rock_door", 1);</action></exit>
+		<recipe type="farm" />
+	</structure>
+	<structure id="food_market" width="41" height="35" image="food_market.png" type="market" animation="market" restock="5000">
+		<item id="berries" min="5" max="20" />
+		<item id="red_berries" min="5" max="20" />
+		<item id="meat" min="5" max="20" />
+		<item id="fruit" min="5" max="20" />
+		<item id="wheat" min="5" max="20" />
+		<item id="sugar" min="5" max="10" />
+		<item id="eggs" min="5" max="10" />
+		<item id="milk" min="5" max="10" />
+		<item id="pig" min="0" max="1" />
+		<select count="3">
+			<item id="steak" min="5" max="10" />
+			<item id="bread" min="5" max="10" />
+			<item id="pancakes" min="5" max="10" />
+			<item id="hamburger" min="5" max="10" />
+			<item id="pie" min="5" max="10" />
+		</select>
+		<enter><action>this.loopAnimation("talk")</action></enter>
+		<exit><action>this.loopAnimation("idle")</action></exit>
+	</structure>
+	<structure id="weaps_market" width="46" height="35" image="weaps_market.png" type="market" animation="market" restock="5000">
+		<item id="mega_backpack" min="1" max="1" if="player.getItemCount('mega_backpack') == 0" achievement="bigpack" />
+		<item id="net" min="5" max="10" />
+		<item id="torch" min="5" max="10" />
+		<item id="trap" min="5" max="10" />
+		<item id="arrow" min="20" max="40" />
+		<select count="4">
+			<item id="bow" min="1" max="1" />
+			<item id="iron_pickaxe" min="1" max="1" />
+			<item id="iron_sword" min="1" max="1" />
+			<item id="iron_armor" min="1" max="1" />
+			<item id="steel_pickaxe" min="1" max="1" />
+			<item id="steel_sword" min="1" max="1" />
+			<item id="steel_armor" min="1" max="1" />
+		</select>
+		<enter><action>this.loopAnimation("talk")</action></enter>
+		<exit><action>this.loopAnimation("idle")</action></exit>
+	</structure>
+	<structure id="mineral_market" width="46" height="35" image="mineral_market.png" type="market" animation="market" restock="5000">
+		<item id="wood" min="10" max="30" />
+		<item id="coal" min="10" max="20" />
+		<item id="iron" min="5" max="20" />
+		<item id="cloth" min="10" max="20" />
+		<item id="fence" min="5" max="10" />
+		<select count="3">
+			<item id="quartz" min="5" max="5" />
+			<item id="gold" min="5" max="5" />
+			<item id="diamond" min="5" max="5" />
+			<item id="iron_bar" min="5" max="5" />
+			<item id="steel_bar" min="5" max="5" />
+		</select>
+		<enter><action>this.loopAnimation("talk")</action></enter>
+		<exit><action>this.loopAnimation("idle")</action></exit>
+	</structure>
+	<compound id="market">
+		<structure id="mineral_market" x="0" />
+		<structure id="weaps_market" x="3" />
+		<structure id="food_market" x="6" />
+	</compound>
+	<structure id="dockhouse" width="100" height="55" image="dockhouse.png" type="dockhouse">
+		<recipe type="dock" />
+	</structure>
+	<structure id="dock" width="64" height="80" image="dock.png" offsetY="64" type="dock" />
+	<structure id="dock_empty" width="64" height="80" image="dock.png" y="1" offsetY="80" />
+	<structure id="dock_empty_flip" width="64" height="80" image="dock.png" y="1" offsetY="80" flip="true" />
+	<structure id="wheat" width="90" height="18" image="wheat.png" type="farmUpgrade">
+		<farmable id="wheat" />
+	</structure>
+	<structure id="orchard" width="120" height="48" image="orchard.png" type="farmUpgrade">
+		<farmable id="wood" />
+		<farmable id="fruit" />
+	</structure>
+	<structure id="pen" width="40" height="29" image="pen.png" offsetX="-16" animal="pig" type="pen">
+		<farmable id="meat" />
+		<farmable id="milk" />
+		<farmable id="eggs" />
+	</structure>
+	<structure id="boat" width="40" height="40" image="boat.png" type="boat" />
+	<structure id="lab" width="64" height="64" image="lab.png" type="crafting">
+		<recipe type="lab" />
+		<craft>
+			<action>area.getObjectOnLayer(this.tile_x, this.tile_y, ObjectLayer.BACK_LAYER).playAnimation("craft")</action>	
+		</craft>
+	</structure>
+	<structure id="wyrm_pen" width="42" height="26" image="cage.png" attachFarm="false" type="wyrmPen" />
+</structures>

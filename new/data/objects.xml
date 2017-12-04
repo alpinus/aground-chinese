@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+	<player id="player.ancient" tile="player" health="50" stamina="100" healthPerLevel="5" staminaPerLevel="10" maxLevel="30" speed="15" talk_sfx="talking1" />
+	<include id="enemies.xml" />
+	<include id="trees.xml" />
+	<include id="npc/builder.xml" />
+	<include id="npc/farmer.xml" />
+	<include id="npc/miner.xml" />
+	<include id="npc/trader.xml" />
+	<include id="npc/alchemist.xml" />
+	<trap id="net" capture="1" />
+	<trap id="trap" damage="4" />
+	<object id="fence" blocking="true" />
+	<object id="builder.corpse" tile="builder" action="loot" animation="builder.corpse" layer="npc">
+		<remove object="this" killer="player" modal="true" />
+		<loot id="stone_axe" />
+		<dialogue section="player" id="storehouse1" />
+		<dialogue section="player" id="storehouse2" />
+		<quest id="storehouse2" ask="false" />
+	</object>
+</objects>

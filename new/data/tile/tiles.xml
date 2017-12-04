@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<tiles>
+	<tile id="empty" />
+	<tile id="grass" sheet="tiles.png" x="0" y="0" />
+	<tile id="dirt" sheet="tiles.png" x="1" y="0" />
+	<tile id="dirt_sand1" sheet="tiles.png" x="5" y="10" />
+	<tile id="dirt_sand2" sheet="tiles.png" x="4" y="10" />
+	<tile id="dirt_sand3" sheet="tiles.png" x="0" y="11" />
+	<tile id="sand_top" sheet="tiles.png" x="6" y="10" />
+	<tile id="sand" sheet="tiles.png" x="7" y="10" />
+	<tile id="stone" sheet="tiles.png" x="2" y="0" />
+	<tile id="coal" sheet="tiles.png" x="3" y="0" />
+	<tile id="iron" sheet="tiles.png" x="4" y="1" />
+	<tile id="quartz" sheet="tiles.png" x="5" y="2" />
+	<tile id="gold" sheet="tiles.png" x="6" y="3" />
+	<tile id="diamond" sheet="tiles.png" x="7" y="4" />
+	<tile id="sulfur" sheet="tiles.png" x="0" y="6" />
+	<tile id="raw_oil" sheet="tiles.png" x="1" y="7" />
+	<tile id="titanium" sheet="tiles.png" x="2" y="8" />
+	<tile id="uranium" sheet="tiles.png" x="3" y="9" />
+	<tile id="crack" sheet="crack.png" x="0" y="0" />
+	<tile id="smoke" sheet="crack.png" x="2" y="1" />
+	<tile id="player" sheet="player.png" x="0" y="0" />
+	<tilesheet id="rat.png" width="16" height="10" />
+	<tile id="rat" sheet="rat.png" x="0" y="0" />
+	<tile id="boar" sheet="boar.png" x="0" y="0" />
+	<tile id="wyrm" sheet="wyrm.png" x="0" y="0" />
+	<tile id="golem" sheet="golem.png" x="0" y="0" />
+	<tile id="builder" sheet="npc.png" x="0" y="0" />
+	<tile id="miner" sheet="npc.png" x="0" y="4" />
+	<tile id="farmer" sheet="npc.png" x="5" y="6" />
+	<tile id="trader" sheet="npc.png" x="6" y="9" />
+	<tile id="alchemist" sheet="alchemist.png" x="0" y="0" />
+	
+	<tilesheet id="items.png" width="16" height="10" />
+	<tile id="coal.ico" sheet="items.png" x="0" y="1" />
+	<tile id="iron.ico" sheet="items.png" x="4" y="0" />
+	<tile id="quartz.ico" sheet="items.png" x="3" y="0" />
+	<tile id="gold.ico" sheet="items.png" x="6" y="0" />
+	<tile id="diamond.ico" sheet="items.png" x="7" y="0" />
+	<tile id="sulfur.ico" sheet="items.png" x="0" y="0" />
+	<tile id="oil.ico" sheet="items.png" x="5" y="0" />
+	<tile id="titanium.ico" sheet="items.png" x="1" y="0" />
+	<tile id="uranium.ico" sheet="items.png" x="2" y="0" />
+	<tile id="meat.ico" sheet="items.png" x="5" y="1" />
+	<tile id="wood.ico" sheet="items.png" x="3" y="2" />
+	<tile id="blood" sheet="items.png" x="6" y="1" />
+	
+	<tile id="iron_bar.ico" sheet="items.png" x="0" y="4" />
+	<tile id="steel_bar.ico" sheet="items.png" x="6" y="4" />
+	<tile id="fruit.ico" sheet="items.png" x="5" y="3" />
+	<tile id="stone_axe.ico" sheet="items.png" x="0" y="6" />
+	<tile id="stone_pickaxe.ico" sheet="items.png" x="1" y="6" />
+	<tile id="coin_purse.ico" sheet="items.png" x="1" y="3" />
+	<tile id="iron_pickaxe.ico" sheet="items.png" x="1" y="5" />
+	<tile id="iron_sword.ico" sheet="items.png" x="1" y="4" />
+	<tile id="iron_armor.ico" sheet="items.png" x="7" y="3" />
+	<tile id="steel_pickaxe.ico" sheet="items.png" x="7" y="5" />
+	<tile id="steel_sword.ico" sheet="items.png" x="7" y="4" />
+	<tile id="steel_armor.ico" sheet="items.png" x="5" y="4" />
+	<tile id="cloth.ico" sheet="items.png" x="4" y="3" />
+	<tile id="steak.ico" sheet="items.png" x="6" y="5" />
+	<tile id="bread.ico" sheet="items.png" x="4" y="2" />
+	<tile id="cake.ico" sheet="items.png" x="5" y="2" />
+	<tile id="candy_apple.ico" sheet="items.png" x="6" y="2" />
+	<tile id="cheese.ico" sheet="items.png" x="7" y="2" />
+	<tile id="cheeseburger.ico" sheet="items.png" x="0" y="3" />
+	<tile id="eggs.ico" sheet="items.png" x="2" y="3" />
+	<tile id="hamburger.ico" sheet="items.png" x="3" y="3" />
+	<tile id="gold_bar.ico" sheet="items.png" x="6" y="3" />
+	<tile id="net.ico" sheet="items.png" x="2" y="4" />
+	<tile id="oil.ico" sheet="items.png" x="3" y="4" />
+	<tile id="silicon.ico" sheet="items.png" x="4" y="4" />
+	<tile id="wheat.ico" sheet="items.png" x="0" y="5" />
+	<tile id="milk.ico" sheet="items.png" x="2" y="5" />
+	<tile id="omelette.ico" sheet="items.png" x="3" y="5" />
+	<tile id="pancakes.ico" sheet="items.png" x="4" y="5" />
+	<tile id="pizza.ico" sheet="items.png" x="5" y="5" />
+	<tile id="sugar.ico" sheet="items.png" x="2" y="6" />
+	<tile id="backpack.ico" sheet="items.png" x="3" y="6" />
+	<tile id="berries.ico" sheet="items.png" x="4" y="6" />
+	<tile id="pig.ico" sheet="items.png" x="5" y="6" />
+	<tile id="wyrm.ico" sheet="items.png" x="6" y="7" />
+	<tile id="dragonblood.ico" sheet="items.png" x="7" y="7" />
+	<tile id="pie.ico" sheet="items.png" x="0" y="8" />
+	<tile id="magic_box.ico" sheet="items.png" x="1" y="8" />
+	<tile id="boat.ico" sheet="items.png" x="4" y="8" />
+	<tile id="fence.ico" sheet="items.png" x="5" y="8" />
+	<tile id="torch.ico" sheet="items.png" x="6" y="8" />
+	<tile id="trap.ico" sheet="items.png" x="2" y="9" />
+	<tile id="red_berries.ico" sheet="items.png" x="1" y="10" />
+	<tile id="bow.ico" sheet="items.png" x="0" y="11" />
+	<tile id="arrow.ico" sheet="items.png" x="1" y="11" />
+	<tile id="cocoon.ico" sheet="items.png" x="2" y="11" />
+	<tile id="dragon.ico" sheet="items.png" x="0" y="12" />
+	
+	<tilesheet id="dragon.png" width="32" height="10" />
+	<tile id="dragon" sheet="dragon.png" x="0" y="0" />
+	
+	<tile id="health_potion.ico" sheet="items.png" x="5" y="10" />
+	<tile id="stamina_potion.ico" sheet="items.png" x="4" y="10" />
+	<tile id="attack_potion.ico" sheet="items.png" x="2" y="10" />
+	<tile id="defense_potion.ico" sheet="items.png" x="6" y="10" />
+	<tile id="speed_potion.ico" sheet="items.png" x="3" y="10" />
+	<tile id="endurance_potion.ico" sheet="items.png" x="7" y="10" />
+	
+	<tile id="stone_axe" sheet="weps.png" x="0" y="0" />
+	<tile id="stone_pickaxe" sheet="weps.png" x="0" y="1" />
+	<tile id="miner_pickaxe" sheet="weps.png" x="0" y="1" />
+	<tile id="iron_pickaxe" sheet="weps.png" x="0" y="3" />
+	<tile id="steel_pickaxe" sheet="weps.png" x="0" y="4" />
+	<tile id="iron_sword" sheet="weps.png" x="0" y="5" />
+	<tile id="steel_sword" sheet="weps.png" x="0" y="6" />
+	<tile id="bow" sheet="weps.png" x="0" y="7" />
+	
+	<tilesheet id="ui.png" width="8" height="8" />
+	<tile id="stamina" sheet="ui.png" x="0" y="0" />
+	<tile id="health" sheet="ui.png" x="0" y="1" />
+	
+	<tile id="death" sheet="death.png" x="0" y="0" />
+	
+	<tilesheet id="achievements.png" width="32" height="32" />
+	<tile id="achievement.hut" sheet="achievements.png" x="1" y="4" />
+	<tile id="achievement.boar" sheet="achievements.png" x="2" y="2" />
+	<tile id="achievement.storehouse" sheet="achievements.png" x="2" y="0" />
+	<tile id="achievement.farm" sheet="achievements.png" x="1" y="3" />
+	<tile id="achievement.orchard" sheet="achievements.png" x="1" y="1" />
+	<tile id="achievement.smelter" sheet="achievements.png" x="0" y="4" />
+	<tile id="achievement.kitchen" sheet="achievements.png" x="2" y="3" />
+	<tile id="achievement.backpack" sheet="achievements.png" x="3" y="3" />
+	<tile id="achievement.workshop" sheet="achievements.png" x="2" y="4" />
+	<tile id="achievement.wyrm" sheet="achievements.png" x="1" y="2" />
+	<tile id="achievement.golem" sheet="achievements.png" x="0" y="2" />
+	<tile id="achievement.lab" sheet="achievements.png" x="3" y="4" />
+	<tile id="achievement.diamond" sheet="achievements.png" x="3" y="0" />
+	<tile id="achievement.market" sheet="achievements.png" x="0" y="3" />
+	<tile id="achievement.bigpack" sheet="achievements.png" x="2" y="1" />
+	<tile id="achievement.capture_wyrm" sheet="achievements.png" x="0" y="1" />
+	<tile id="achievement.pen" sheet="achievements.png" x="0" y="0" />
+	<tile id="achievement.pizza" sheet="achievements.png" x="3" y="1" />
+	<tile id="achievement.dock" sheet="achievements.png" x="3" y="2" />
+	<tile id="achievement.boat" sheet="achievements.png" x="1" y="0" />
+	<tile id="achievement.wyrm_pen" sheet="achievements.png" x="0" y="5" />
+	<tile id="achievement.dragon" sheet="achievements.png" x="1" y="5" />
+	
+	<tilesheet id="achievement_flash.png" width="32" height="32" />
+	<tile id="achievement_flash" sheet="achievement_flash.png" x="0" y="0" />
+	
+	<tilesheet id="sun.png" width="32" height="32" />
+	<tile id="sun" sheet="sun.png" x="0" y="0" />
+	<tilesheet id="clouds.png" width="53" height="20" />
+	<tile id="cloud1" sheet="clouds.png" x="0" y="0" />
+	<tile id="cloud2" sheet="clouds.png" x="1" y="0" />
+	<tile id="cloud3" sheet="clouds.png" x="2" y="0" />
+	
+	<tile id="seagull" sheet="seagull.png" x="0" y="0" />
+	<tile id="redbreast" sheet="redbreast.png" x="0" y="0" />
+</tiles>

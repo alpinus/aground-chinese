@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<npcs>
+	<npc id="builder" tile="builder" action="talk" talk_sfx="talking1" idle="collectWood">
+		<section if="!player.hasQuest('storehouse')">
+			<dialogue section="builder" id="intro" speaker="this" />
+			<dialogue section="builder" id="introduce1" speaker='player' />
+			<dialogue section="builder" id="introduce2" speaker='this' />
+			<quest id="storehouse">
+				<dialogue section="builder" id="accept1" speaker='player' />
+				<dialogue section="builder" id="accept2" speaker='this' />
+				<item id="stone_axe" />
+			</quest>
+		</section>
+		<choose if="!player.questComplete('storehouse')">
+			<section if="player.canCompleteQuest('storehouse')">
+				<dialogue section="builder" id="storehouse1" speaker='this' />
+				<dialogue section="builder" id="storehouse2" speaker='player' />
+				<complete quest="storehouse" />
+				<sound id="build" />
+				<section with="fade">
+					<structure id="storehouse" x="this.tile_x" />
+					<object id="miner" x="this.tile_x-6" y="2" mine="true" />
+				</section>
+				<dialogue section="builder" id="storehouse3" speaker='player' />
+				<dialogue section="builder" id="storehouse4" speaker='this' />
+			</section>
+			<dialogue section="builder" id="stamina" if="player.getStaminaPercent() < 0.5" speaker='this' />
+			<group>
+				<dialogue section="builder" id="wood" speaker='this' />
+				<dialogue section="builder" id="hint1" speaker='this' />
+				<section>
+					<dialogue section="builder" id="hint2" speaker='this' />
+					<dialogue section="builder" id="hint3" speaker='this' />
+				</section>
+			</group>
+		</choose>
+		<choose if="player.questComplete('smelter')">
+			<section if="!player.hasQuest('backpack')">
+				<dialogue section="builder" id="backpack1" speaker='this' />
+				<dialogue section="builder" id="backpack2" speaker='this' />
+				<quest id="backpack" />
+			</section>
+			<choose if="!player.questComplete('backpack')">
+				<section if="player.canCompleteQuest('backpack')">
+					<dialogue section="builder" id="backpack3" speaker='this' />
+					<complete quest="backpack" />
+					<item id="backpack" />
+				</section>
+				<dialogue section="builder" id="meat" speaker='this' />
+			</choose>
+			<choose if="player.questComplete('farm')">
+				<section if="!player.hasQuest('kitchen')">
+					<dialogue section="builder" id="kitchen1" speaker='this' />
+					<dialogue section="builder" id="kitchen2" speaker='this' />
+					<quest id="kitchen" />
+				</section>
+				<choose if="!player.questComplete('kitchen')">
+					<section if="player.canCompleteQuest('kitchen')">
+						<dialogue section="builder" id="kitchen3" speaker='this' />
+						<complete quest="kitchen" />
+						<sound id="build" />
+						<section with="fade">
+							<move object="this" x="39" />
+							<move object="player" x="39" />
+							<structure id="kitchen" x="this.tile_x" />
+						</section>
+						<dialogue section="builder" id="kitchen4" speaker='this' />
+					</section>
+					<dialogue section="builder" id="kitchen2" speaker='this' />
+				</choose>
+				<choose if="player.getItemCount('coin_purse') > 0">
+					<section if="!player.hasQuest('kitchen2')">
+						<dialogue section="builder" id="kitchen5" speaker='this' />
+						<dialogue section="builder" id="kitchen6" speaker='this' />
+						<quest id="kitchen2" />
+					</section>
+					<choose if="!player.questComplete('kitchen2')">
+						<section if="player.canCompleteQuest('kitchen2')">
+							<dialogue section="builder" id="kitchen7" speaker='this' />
+							<complete quest="kitchen2" />
+							<sound id="build" />
+							<section with="fade">
+								<move object="this" x="39" />
+								<move object="player" x="39" />
+								<structure id="kitchen2" x="this.tile_x" />
+							</section>
+							<dialogue section="builder" id="kitchen8" speaker='this' />
+						</section>
+						<dialogue section="builder" id="kitchen6" speaker='this' />
+					</choose>
+					<dialogue section="builder" id="kitchen8" speaker='this' />
+				</choose>
+				<dialogue section="builder" id="kitchen4" speaker='this' />
+			</choose>
+			<dialogue section="builder" id="farmer" if="!player.hasQuest('farm')" speaker='this' />
+			<dialogue section="builder" id="farm" if="player.hasQuest('farm')" speaker='this' />
+		</choose>
+		<dialogue section="builder" id="miner" if="player.getItemCount('stone_pickaxe') == 0" speaker='this' />
+		<dialogue section="builder" id="stamina" speaker='this' />
+	</npc>
+</npcs>

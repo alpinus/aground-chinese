@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<lang keyboard="default">
+	<section id="common">
+		<text id="blocked">锁定</text>
+		<text id="miss">失误!</text>
+		<text id="critical_hit">会心一击!</text>
+		<text id="weight">重量:</text>
+		<text id="save">已存档</text>
+		<text id="del_save">删除存档</text>
+		<text id="save_corrupt">存盘无效，开始新游戏</text>
+		<text id="fuel">Fuel</text>
+		<text id="add_fuel">Add Fuel</text>
+		<text id="all">All</text>
+		<text id="equipment">Equipment</text>
+		<text id="attack">Attack:</text>
+		<text id="range">Range:</text>
+		<text id="defense">Defense:</text>
+		<text id="cut">Cut:</text>
+		<text id="mine">Mine:</text>
+		<text id="capacity">Carry:</text>
+		<text id="health">Health:</text>
+		<text id="stamina">Stamina:</text>
+		<text id="ok">Ok</text>
+		<text id="cancel">Cancel</text>
+		<text id="yes">Yes</text>
+		<text id="no">No</text>
+		<text id="accept">Accept</text>
+		<text id="reject">Reject</text>
+		<text id="sell">Sell</text>
+		<text id="buy">Buy</text>
+		<text id="drop_item">你要丢弃多少？</text>
+		<text id="eat_item">你想食用多少？</text>
+		<text id="store_item">想存多少？</text>
+		<text id="retrieve_item">想要取回多少？</text>
+		<text id="sell_item">卖出多少？</text>
+		<text id="buy_item">购买多少？</text>
+		<text id="requires">-- 配料 --</text>
+		<text id="inventory">库存</text>
+		<text id="quests">任务记录</text>
+		<text id="smelter">锻造屋</text>
+		<text id="kitchen">厨房</text>
+		<text id="workshop">作坊</text>
+		<text id="storehouse">仓库</text>
+		<text id="dockhouse">码头小屋</text>
+		<text id="harvest">收益</text>
+		<text id="manage">管理</text>
+		<text id="feed">饲料</text>
+		<text id="lab">实验室</text>
+		<text id="coins">钱币</text>
+		<text id="per_hit">per Hit:</text>
+		<text id="move">移动</text>
+		<text id="newgame">新游戏</text>
+		<text id="continue">继续游戏</text>
+		<text id="options">设置</text>
+		<text id="exit">退出</text>
+		<text id="forums">社区</text>
+		<text id="empty">空</text>
+		<text id="empty_slot">&lt; 空存档 &gt;</text>
+		<text id="corrupt_slot">损坏的存档</text>
+		<text id="overwrite">要覆盖这个存档吗?</text>
+		<text id="none">无</text>
+		<text id="additions">Farm Additions</text>
+		<text id="addition_slots">添加:</text>
+		<text id="trap_overlap">[color=770000]你不能在陷阱上放置陷阱！[/color]</text>
+		<text id="placed">放置</text>
+		<text id="collect">搜集</text>
+		<text id="level_up">等级提升！</text>
+		<text id="level">等级：</text>
+		<text id="experience">经验</text>
+		<text id="hotkey">选择物品</text>
+		<text id="retry">重来</text>
+		<text id="title">标题画面</text>
+		<text id="move_all">移动所有</text>
+		<text id="melee_equip">近战攻击 {item} </text>
+		<text id="ranged_equip">远程攻击 {item}</text>
+		<text id="add_animal">添加动物</text>
+		<text id="select_feed">选择饲料</text>
+		<text id="feed_count">打算喂多少？</text>
+	</section>
+	<section id="actions">
+		<text id="drop">丢弃</text>
+		<text id="place">Place</text>
+		<text id="use">使用</text>
+		<text id="equip">装备</text>
+		<text id="unequip">卸下</text>
+		<text id="fire">Fire</text>
+		<text id="eat">食用</text>
+		<text id="loot">剖尸</text>
+		<text id="feed">饲料</text>
+		<text id="collect">搜集</text>
+	</section>
+	<section id="item.names">
+		<text id="wood">木材</text>
+		<text id="coal">煤炭</text>
+		<text id="iron">铁矿</text>
+		<text id="quartz">石英</text>
+		<text id="gold">金矿</text>
+		<text id="diamond">Diamond</text>
+		<text id="sulfur">Sulfur</text>
+		<text id="oil">Raw Oil</text>
+		<text id="titanium">Titanium</text>
+		<text id="uranium">Uranium</text>
+		<text id="iron_bar">Iron Bar</text>
+		<text id="steel_bar">Steel Bar</text>
+		<text id="gold_bar">Gold Bar</text>
+		<text id="meat">Meat</text>
+		<text id="fruit">Apples</text>
+		<text id="wheat">Wheat</text>
+		<text id="eggs">Eggs</text>
+		<text id="milk">Milk</text>
+		<text id="sugar">Sugar</text>
+		<text id="steak">Steak</text>
+		<text id="bread">Bread</text>
+		<text id="pie">Pie</text>
+		<text id="pancakes">Pancakes</text>
+		<text id="hamburger">Hamburger</text>
+		<text id="cheese">Cheese</text>
+		<text id="pizza">Pizza</text>
+		<text id="omelette">Omelette</text>
+		<text id="cheeseburger">Cheeseburg</text>
+		<text id="cake">Cake</text>
+		<text id="candy_apple">Candy Apple</text>
+		<text id="dragonblood">Dragonblood</text>
+		<text id="stone_axe">Stone Axe</text>
+		<text id="stone_pickaxe">Stone Pick</text>
+		<text id="coin_purse">Coin Purse</text>
+		<text id="iron_pickaxe">Iron Pick</text>
+		<text id="iron_sword">Iron Sword</text>
+		<text id="iron_armor">Iron Armor</text>
+		<text id="steel_pickaxe">Steel Pick</text>
+		<text id="steel_sword">Steel Sword</text>
+		<text id="steel_armor">Steel Armor</text>
+		<text id="bow">Bow</text>
+		<text id="arrow">Arrow</text>
+		<text id="backpack">Backpack</text>
+		<text id="mega_backpack">Super Pack</text>
+		<text id="magic_backpack">Magic Pack</text>
+		<text id="magic_box">Magic Box</text>
+		<text id="cloth">Cloth</text>
+		<text id="net">Net</text>
+		<text id="berries">Berries</text>
+		<text id="red_berries">Red Berries</text>
+		<text id="health_potion">Hp Potion</text>
+		<text id="stamina_potion">Sta Potion</text>
+		<text id="attack_potion">Atk Potion</text>
+		<text id="defense_potion">Def Potion</text>
+		<text id="speed_potion">Spd Potion</text>
+		<text id="endurance_potion">End Potion</text>
+		<text id="pig">Pig</text>
+		<text id="wyrm">Wyrm</text>
+		<text id="cocoon">Cocoon</text>
+		<text id="dragon">Baby Dragon</text>
+		<text id="boat">Boat</text>
+		<text id="fence">Fence</text>
+		<text id="torch">Torch</text>
+		<text id="trap">Trap</text>
+	</section>
+	<section id="item.descriptions">
+		<text id="coin_purse">Allows coins.</text>
+		<text id="boat">Sail the World.</text>
+		<text id="fence">Keeps enemies out.</text>
+		<text id="torch">+1 sight next 20 tiles mined.</text>
+		<text id="trap">Trap: 4 damage.</text>
+		<text id="red_berries">+1 atk next hit.</text>
+		<text id="magic_box">Contains everything.</text>
+		<text id="health_potion">+10 max health.</text>
+		<text id="stamina_potion">+20 max stamina.</text>
+		<text id="attack_potion">+1 atk next 2 hits.</text>
+		<text id="defense_potion">+1 def next 2 hits.</text>
+		<text id="speed_potion">Increases speed.</text>
+		<text id="endurance_potion">Increases endurance.</text>
+	</section>
+	<section id="achievement.names">
+		<text id="hut">Shelter</text>
+		<text id="boar">Instant Meat</text>
+		<text id="storehouse">Infinite Space</text>
+		<text id="farm">Sharecropping</text>
+		<text id="orchard">Apples</text>
+		<text id="smelter">Metallurgy</text>
+		<text id="kitchen">Bon Appetit</text>
+		<text id="backpack">Heavy Lifter</text>
+		<text id="workshop">Crafting Time</text>
+		<text id="wyrm">Wyrmslayer</text>
+		<text id="golem">Rockslayer</text>
+		<text id="diamond">Shiny</text>
+		<text id="market">A Good Trade</text>
+		<text id="bigpack">Heavier Lifter</text>
+		<text id="capture_wyrm">Get Wyrm</text>
+		<text id="pen">Milking Pigs</text>
+		<text id="pizza">Mmm, Cheese</text>
+		<text id="dock">Distant Shores</text>
+		<text id="boat">Setting Sail</text>
+		<text id="lab">Experiments</text>
+		<text id="wyrm_pen">Infinite Blood</text>
+		<text id="dragon">Hatchling</text>
+	</section>
+	<section id="achievement.descriptions">
+		<text id="hut">Build the [color=ff2222]Hut[/color].</text>
+		<text id="boar">Defeat a [color=ff2222]Boar[/color].</text>
+		<text id="storehouse">Build the [color=ff2222]Storehouse[/color].</text>
+		<text id="farm">Build the [color=ff2222]Farm[/color].</text>
+		<text id="orchard">Add an [color=ff2222]Orchard[/color] to the [color=ff2222]Farm[/color].</text>
+		<text id="smelter">Build the [color=ff2222]Smelter[/color].</text>
+		<text id="kitchen">Build the [color=ff2222]Kitchen[/color].</text>
+		<text id="backpack">Get the [color=ff2222]Backpack[/color].</text>
+		<text id="workshop">Build the [color=ff2222]Workshop[/color].</text>
+		<text id="wyrm">Defeat a [color=ff2222]Wyrm[/color].</text>
+		<text id="golem">Defeat a [color=ff2222]Golem[/color].</text>
+		<text id="diamond">Mine a [color=ff2222]Diamond[/color].</text>
+		<text id="market">Build the [color=ff2222]Market[/color].</text>
+		<text id="bigpack">Buy a [color=ff2222]Super Pack[/color].</text>
+		<text id="capture_wyrm">Now what do I do with it?</text>
+		<text id="pen">Add a [color=ff2222]Pen[/color] to the [color=ff2222]Farm[/color].</text>
+		<text id="pizza">Cook a [color=ff2222]Pizza[/color].</text>
+		<text id="dock">Build the [color=ff2222]Dock[/color].</text>
+		<text id="boat">Build a [color=ff2222]Boat[/color].</text>
+		<text id="lab">Build the [color=ff2222]Laboratory[/color].</text>
+		<text id="wyrm_pen">Build the [color=ff2222]Wyrm Pen[/color].</text>
+		<text id="dragon">Hatch a [color=ff2222]Dragon[/color] fron a [color=ff2222]Cocoon[/color].</text>
+	</section>
+	<section id="structure">
+		<text id="wheat">Wheat Field</text>
+		<text id="orchard">Orchard</text>
+		<text id="pen">Pen</text>
+		<text id="produces">-- Produces --</text>
+		<text id="requires">-- Requires --</text>
+	</section>
+	<section id="structure.tooltip">
+		<text id="hut">Rest in Hut</text>
+		<text id="storehouse">Enter Storehouse</text>
+		<text id="workshop">Craft in Workshop</text>
+		<text id="smelter">Smelt Ores</text>
+		<text id="kitchen">Cook in Kitchen</text>
+		<text id="farm">Enter Farm</text>
+		<text id="food_market">Trade with Foodseller</text>
+		<text id="weaps_market">Trade with Weapon Dealer</text>
+		<text id="mineral_market">Trade with Ore Merchant</text>
+		<text id="dockhouse">Enter Dockhouse</text>
+		<text id="boat">Sail Boat</text>
+		<text id="lab">Mix Potions</text>
+		<text id="wyrm_pen">Manage Wyrm Pen</text>
+	</section>
+	<section id="object.tooltip">
+		<text id="bush">Pick Berries</text>
+		<text id="tree">Chop Tree</text>
+		<text id="enemy">Attack</text>
+	</section>
+	<section id="warning">
+		<text id="weight">Over Carrying Capacity!</text>
+		<text id="stamina">Out of Stamina, Losing Health!</text>
+		<text id="growing">Still Growing! Come back later.</text>
+		<text id="additions">No farm addition slots remaining!</text>
+		<text id="focus">Click for Focus</text>
+		<text id="ingredients">You do not have enough ingredients.</text>
+		<text id="place_surface">You cannot place objects below the surface.</text>
+		<text id="place_overlap">You cannot place objects on top of objects.</text>
+		<text id="no_effect">It won't have any effect.</text>
+		<text id="drop_instead">Would you like to drop them instead?</text>
+		<text id="cannot_fire">Cannot fire {projectile} without {weapon}.</text>
+	</section>
+	<section id="market">
+		<text id="restock">We should be getting some new stock soon!</text>
+	</section>
+	<section id="quests">
+		<text id="new">New Quest!</text>
+		<text id="none">You have no quests at this time.</text>
+		<text id="requires">-- Requirements --</text>
+		<text id="complete">-- Complete --</text>
+		<text id="hut">Build Hut</text>
+		<text id="storehouse">Build Storehouse</text>
+		<text id="storehouse2">Build Storehouse</text>
+		<text id="smelter">Craft Smelter</text>
+		<text id="backpack">Backpack</text>
+		<text id="workshop">Craft Workshop</text>
+		<text id="kitchen">Build Kitchen</text>
+		<text id="kitchen2">Upgrade Kitchen</text>
+		<text id="farm">Build Farm</text>
+		<text id="market">Build Market</text>
+		<text id="dock">Build Dock</text>
+		<text id="dock2">Build Dock</text>
+		<text id="pen">Build Pig Pen</text>
+		<text id="boat">Build Boat</text>
+		<text id="lab">Magic Materials</text>
+		<text id="wyrm_pen">Wyrm Pen</text>
+	</section>
+	<section id="quest.description">
+		<text id="hut">You need to build a [color=550000]Hut[/color] for shelter from the storm.</text>
+		<text id="storehouse">wants to build a [color=550000]Storehouse[/color].</text>
+		<text id="storehouse2">Build a [color=550000]Storehouse[/color] to store all your items.</text>
+		<text id="smelter">wants a [color=550000]Smelter[/color] to refine ores.</text>
+		<text id="backpack">will give you his backpack for some [item=meat].</text>
+		<text id="workshop">wants a [color=550000]Workshop[/color] to create metal tools.</text>
+		<text id="kitchen">wants to build a [color=550000]Kitchen[/color] to cook food.</text>
+		<text id="kitchen2">wants the [color=550000]Kitchen[/color] to make [item=cheese].</text>
+		<text id="farm">wants to build a [color=550000]Farm[/color] to grow crops.</text>
+		<text id="market">wants to build a [color=550000]Market[/color] to trade goods.</text>
+		<text id="dock">wants a [color=550000]Dock[/color] to travel the world.</text>
+		<text id="dock2">Build a [color=550000]Dock[/color] to find other survivors.</text>
+		<text id="pen">wants to add a [color=550000]Pen[/color] to house livestock.</text>
+		<text id="boat">It's time to sail the world! Build a [item=boat] at the [color=550000]Dockhouse[/color].</text>
+		<text id="lab">wants to experiment with [item=dragonblood].</text>
+		<text id="wyrm_pen">wants to experiment on [item=wyrm]s.</text>
+	</section>
+	<section id="npc">
+		<text id="talk">Talk</text>
+		<text id="builder">Builder</text>
+		<text id="miner">Miner</text>
+		<text id="farmer">Farmer</text>
+		<text id="trader">Trader</text>
+		<text id="alchemist">Alchemist</text>
+	</section>
+	<section id="builder">
+		<text id="intro">You really expect to be able to survive here? It’s hopeless, man.</text>
+		<text id="introduce1">You’re good at building right? What if we built something to store the resources and food we gather?</text>
+		<text id="introduce2">Hmph. I guess with [var=quest.storehouse.wood] [item=wood] and [var=quest.storehouse.berries] [item=berries] I might be able to make a decent [color=770000]Storehouse[/color].</text>
+		<text id="accept1">Alright! I can find that, no problem.</text>
+		<text id="accept2">Take this [item=stone_axe], if you’re so gung-ho.</text>
+		<text id="stamina">I'm exhausted. You look tired too. We should rest in the [color=770000]Hut[/color] to save the game and restore our [tile=stamina] [color=006600]Stamina[/color].</text>
+		<text id="wood">How's my old [item=stone_axe]? I bet it could chop down a tree by hitting [key=select] next to one.</text>
+		<text id="meat">Try killing a few [color=770000][tile=boar] Boars[/color] by hitting [key=select] next to them.</text>
+		<text id="hint1">All items go into your inventory when you collect them. You can check it by hitting [key=inventory].</text>
+		<text id="hint2">If your [tile=stamina] [color=006600]Stamina[/color] runs out, you will lose [tile=health] [color=770000]Health[/color], and if your [tile=health] [color=770000]Health[/color] runs out, you will die.</text>
+		<text id="hint3">That's why you need to eat a lot of [item=berries], [item=fruit] and [item=meat]. You can do this by selecting them in your inventory.</text>
+		<text id="storehouse1">You gathered everything already? I’m impressed.</text>
+		<text id="storehouse2">Let’s get this [color=770000]Storehouse[/color] built!</text>
+		<text id="storehouse3">Look at that! Don’t you feel accomplished?</text>
+		<text id="storehouse4">Yeah… actually, this will be useful. Now we can avoid getting tired out from carrying too much.</text>
+		<text id="farmer">We should make a deal with the [color=770000][tile=farmer] Farmer[/color], I bet he could help us grow some tasty food.</text>
+		<text id="miner">Did you see that [color=770000][tile=miner] Miner[/color] emerge from underground? You should see what she wants.</text>
+		<text id="kitchen1">What do you think of building a [color=770000]Kitchen[/color]? [item=meat] is good, but it’s even better cooked.</text>
+		<text id="kitchen2">I'll need [var=quest.kitchen.wood] [item=wood] and [var=quest.kitchen.coal] [item=coal] to build the [color=770000]Kitchen[/color].</text>
+		<text id="kitchen3">Looks like you have everything I need. Let's get this [color=770000]Kitchen[/color] built!</text>
+		<text id="kitchen4">You can cook food at the [color=770000]Kitchen[/color] as long as you have [item=wood] or [item=coal] to fuel it.</text>
+		<text id="kitchen5">You know what I’m craving? Some [item=cheese]. Nothing is quite as delicious.</text>
+		<text id="kitchen6">I could upgrade the [color=770000]Kitchen[/color] to make [item=cheese] and cook new recipes for [var=quest.kitchen2.wood] [item=wood] and [var=quest.kitchen2.steel_bar] [item=steel_bar].</text>
+		<text id="kitchen7">Looks like you have everything I need. Let's get this [color=770000]Kitchen[/color] upgraded!</text>
+		<text id="kitchen8">Try out some of the new recipes! It almost feels civilized!</text>
+		<text id="farm">Man, I'm hungry. I hope you get that [color=770000]Farm[/color] finished soon!</text>
+		<text id="backpack1">Hey, wasn't it tough to carry all that [item=coal] for the [color=770000]Smelter[/color]? I could give you my [item=backpack] in exchange for [var=quest.backpack.meat] [item=meat].</text>
+		<text id="backpack2">I could kill for some [item=meat], but I already gave you my [item=stone_axe]!</text>
+		<text id="backpack3">Excellent! Thank you for the [item=meat]! As promised, here is my [item=backpack].</text>
+	</section>
+	<section id="farmer">
+		<text id="introduce1">Boy am I glad to see you. Here I was thinkin’ I was all alone, just one old man in an empty world.</text>
+		<text id="introduce2">I still got some life in these old bones and I reckon I could help you out. Farming’s my trade, and we all need some good food to keep us going.</text>
+		<text id="introduce3">How about we build a barn and get a [color=770000]Farm[/color] up and runnin’?</text>
+		<text id="farm1">Nice! I'll put up the barn and plant some seeds!</text>
+		<text id="farm2">Now we have a [color=770000]Farm[/color]! Stop by on occasion to pick up growin' crops - they will help restore your [tile=stamina] [color=006600]Stamina[/color]. Here - take some [item=bread] to keep you going while it grows.</text>
+		<text id="farm3">You can get both [item=wood] and [item=fruit] by chopping down trees.</text>
+		<text id="farm4">If you want to grow more, we can add up to four wheat fields or orchards. You can add these in the barn.</text>
+		<text id="farm5">Look at our awesome [color=770000]Farm[/color]! It's as good as anything I used to grow back home!</text>
+		<text id="kitchen">Raw [item=wheat] isn’t very tasty, but I bet we could make something better if you and the [color=770000][tile=builder] Builder[/color] made a [color=770000]Kitchen[/color].</text>
+		<text id="pen1">You know what this [color=770000]Farm[/color] needs? Some Livestock! How about capturing some [color=770000][tile=boar] Boars[/color] with a [item=net] from the [color=770000]Market[/color]?</text>
+		<text id="pen2">I’ll add a [color=770000]Pen[/color] for [var=quest.pen.pig] [item=pig] and [var=quest.pen.wood] [item=wood].</text>
+		<text id="pen3">Now aren't those the fattest and juiciest looking [item=pig]s you've ever seen?</text>
+		<text id="pen4">With the pen, we can now produce [item=meat], [item=milk] and [item=eggs]!</text>
+		<text id="pig">How do you get a [item=pig]? Lay a [item=net] on the ground and then lure a [color=770000][tile=boar] Boar[/color] onto it, and poof! It’ll be caught and domesticated!</text>
+		<text id="kitchen2">Milking a [item=pig]? Why not? This is a strange land. They even lay [item=eggs]! But what we could really use is some [item=cheese] - talk to the [color=770000][tile=builder] Builder[/color] about improving the [color=770000]Kitchen[/color].</text>
+	</section>
+	<section id="miner">
+		<text id="introduce1">Oh, hey. Didn’t realize there were other survivors.</text>
+		<text id="introduce2">I’ve been underground - there’s way more to this place than meets the eye.</text>
+		<text id="introduce3">I’ve got an extra pickaxe if you want to check it out too.</text>
+		<text id="smelter">How's the digging going? Maybe we should build a [color=770000]Smelter[/color] to melt down ores into bars.</text>
+		<text id="accept1">Great! Let me know when you have enough [item=coal]!</text>
+		<text id="smelter1">This is the stuff. I should have a [color=770000]Smelter[/color] up in no time!</text>
+		<text id="smelter2">The [color=770000]Smelter[/color] can turn raw ores into bars. It requires fuel to melt them down, but luckily there is plenty of [item=coal] around to keep it running.</text>
+		<text id="hint1">Well, what are you waiting for? Just hit [key=down] to dig down and find those ores!</text>
+		<text id="hint2">Ore is heavy - make sure to drop them off in the [color=770000]Storehouse[/color] between trips.</text>
+		<text id="hint3">It’s easy to get caught up mining, but make sure you have enough [tile=stamina] [color=006600]Stamina[/color] for the return trip.</text>
+		<text id="hint4">The deeper underground you go, the better ores you will find.</text>
+		<text id="workshop1">How about a [color=770000]Workshop[/color] to turn those metal bars into tools? I can make one for [var=quest.workshop.iron_bar] [item=iron_bar] and [var=quest.workshop.wood] [item=wood].</text>
+		<text id="workshop2">Alright, lets get this [color=770000]Workshop[/color] set up!</text>
+		<text id="workshop3">At the [color=770000]Workshop[/color], you can instantly create any tools or items that you have the ingredients to make.</text>
+		<text id="workshop4">You'll need to find [item=iron] to smelt into [item=iron_bar] at the [color=770000]Smelter[/color].</text>
+		<text id="smelter3">Once you have enough [item=iron], select [item=iron_bar] from the [color=770000]Smelter[/color] menu, and it will automatically smelt as long as there is fuel remaining.</text>
+		<text id="smelter4">You can add as many jobs to the [color=770000]Smelter[/color] as you have ingredients for, and it will smelt them one by one while you are away as long as it has fuel.</text>
+		<text id="pick">If you want to mine through [color=770000][tile=stone] Stone[/color] to reach [item=gold], you'll need to craft a [item=iron_pickaxe] or [item=steel_pickaxe] at the [color=770000]Workshop[/color].</text>
+		<text id="equip">Equipment is automatically equipped as long as it is in your inventory. It can increase your attack, defense or mining speed, but be careful, as most equipment has weight.</text>
+		<text id="hotkey">You can also use [color=770000]Hotkeys[/color] now.\nHit [key=hotkey1] or [key=hotkey2] in the inventory window to set them.</text>
+	</section>
+	<section id="trader">
+		<text id="steal">A [item={item}] was stolen from the [color=770000]Storehouse[/color]!</text>
+		<text id="caught">The thief was caught red-handed!</text>
+		<text id="introduce1">It's hard enough surviving here without someone stealing our stuff!</text>
+		<text id="introduce2">I might have borrowed a few things. But, listen. I’ll repay you by offering my services. I have connections with many traders on other islands.</text>
+		<text id="introduce3">Traders? There are more survivors out there?</text>
+		<text id="introduce4">Yup. But I’ll need [var=quest.market.gold_bar] [item=gold_bar]s to convince them to come here.</text>
+		<text id="introduce5">You’re going to charge us when you were just caught stealing?!</text>
+		<text id="introduce6">That was that. This is business. My offer is [var=quest.market.gold_bar] [item=gold_bar]s to add this island to the trade route.</text>
+		<text id="introduce7">Fine. If there are other survivors out there, trading with them could get us off this island.</text>
+		<text id="introduce8">I’m sorry, I can’t trust a thief. Leave this island, and never come back.</text>
+		<text id="introduce9">There are better islands to steal from anyways. You don’t even know what you’re missing.</text>
+		<text id="market1">Perfect! I feel this is the beginning of many lucrative trades between us.</text>
+		<text id="market2">Take this [item=coin_purse]. You’ll need it to store coins for buying and selling. I recommend buying a [item=mega_backpack] as soon as you can, they are a real life-saver!</text>
+		<text id="market3">At the [color=770000]Market[/color], you can sell goods to get coins, which you can use to buy other goods.</text>
+		<text id="market4">The [color=770000]Market[/color] sometimes gets new stock too, so if you can't get what you want or they run out of inventory, check back later.</text>
+		<text id="market5">To make a [item=gold_bar], you'll need to smelt [item=gold], which is found deep underground. The [color=770000][tile=miner] Miner[/color] may have some tips for mining that deep.</text>
+		<text id="dock1">Are you interested in seeing the rest of the world? How about building a [color=770000]Dock[/color]?</text>
+		<text id="dock2">I’ll build it for you if you give me [var=quest.dock.coins] [color=770000][tile=coin_purse.ico] Coins[/color], [var=quest.dock.wood] [item=wood], [var=quest.dock.cloth] [item=cloth] and [var=quest.dock.net] [item=net].</text>
+		<text id="dock3">Excellent, lets get this [color=770000]Dock[/color] built!</text>
+		<text id="dock4">Once you build a [item=boat] at the [color=770000]Dock[/color], you'll be ready to travel across the sea!</text>
+		<text id="dock5">The [color=770000]Dock[/color] costs [var=quest.dock.coins] [color=770000][tile=coin_purse.ico] Coins[/color], [var=quest.dock.wood] [item=wood], [var=quest.dock.cloth] [item=cloth] and [var=quest.dock.net] [item=net].</text>
+		<text id="accept">Accept Offer</text>
+		<text id="reject">Send Away</text>
+	</section>
+	<section id="alchemist">
+		<text id="introduce1">There is more to this planet than meets the eye. I have been doing experiments, and I believe I have discovered magic!</text>
+		<text id="introduce2">I am in need of more materials. If you come across [item=dragonblood], give it to me and I will make sure you are rewarded.</text>
+		<text id="lab1">I knew it! This is the secret! I must set up a laboratory immediately!</text>
+		<text id="lab2">Your reward? Bring materials to my lab and I will mix up a magic potion for you.</text>
+		<text id="lab3">Hurry up! My research is at a standstill until I get some [item=dragonblood]!</text>
+		<text id="pen1">I need more [item=dragonblood]! Bring me [var=quest.wyrm_pen.wyrm] live [item=wyrm]s and we'll have an endless supply of [item=dragonblood] to experiment with!</text>
+		<text id="pen2">Excellent! Stand back while I work my magic!</text>
+		<text id="pen3">Behold my brilliant invention - the [color=770000]Wyrm Pen[/color]! It's more than just a pen, it's an endless supply of [item=dragonblood]!</text>
+		<text id="wyrm">I bet you could capture a [item=wyrm] with a [item=net]. But they must be alive and unharmed!</text>
+	</section>
+	<section id="player">
+		<text id="storm1">The storm is getting intense. I need shelter, but there’s nothing around here but fallen branches!</text>
+		<text id="storm2">I’ll have to try building a [color=770000]Hut[/color]. [var=quest.hut.wood] [item=wood] should suffice.</text>
+		<text id="storm3">So tired... I can barely hold all this [item=wood]. Only a little more and I'll be able to rest in the [color=770000]Hut[/color].</text>
+		<text id="storehouse1">This axe could come in handy. With it I could probably build a [color=770000]Storehouse[/color] to store the resources I gather.</text>
+		<text id="storehouse2">I bet I could make a storehouse with [var=quest.storehouse.wood] [item=wood] and [var=quest.storehouse.berries] [item=berries].</text>
+		<text id="storehouse3">Alright! Let’s get this storehouse built!</text>
+		<text id="storehouse4">Perfect. Now I can avoid getting tired out from carrying too much.</text>
+		<text id="dock1">I wonder if the thief was telling the truth about other survivors?</text>
+		<text id="dock2">Perhaps I should build a [color=770000]Dock[/color] to set out and find them. It'll take [var=quest.dock2.wood] [item=wood], [var=quest.dock2.steel_bar] [item=steel_bar] and [var=quest.dock2.gold_bar] [item=gold_bar].</text>
+		<text id="dock3">Alright, lets get this [color=770000]Dock[/color] built!</text>
+		<text id="dock4">Now we just need to build a [item=boat] at the [color=770000]Dock[/color]!</text>
+	</section>
+	<section id="scene.hut">
+		<text id="first1">Not bad for my first shelter.</text>
+		<text id="first2">Help…[pause=4] please…[pause=4] shelter…</text>
+		<text id="first3">Someone is outside! Can I trust them?</text>
+		<text id="first4">Thank you. I owe you my life. But what do we do now?</text>
+		<text id="first5">For now, we stay warm and dry.</text>
+		<text id="first6">But what about after that? How will we survive on this deserted island?</text>
+		<text id="first7">Is there even any point? We’re stuck here, there’s no going back.</text>
+		<text id="first8">At least we can try. Maybe life here won’t be as bad as you think it will.</text>
+		<text id="first9">Please…[pause=4] help…</text>
+		<text id="second1">… so when I arrived here I just started digging and didn’t even realize there was a storm.</text>
+		<text id="second2">But I’m glad you’re here. I was getting tired of eating dirt, and there’s nothing like a warm fire after a long day underground.</text>
+		<text id="second3">Do you think there are more survivors out there?</text>
+		<text id="second4">Honestly, I’m surprised anyone survived that crash. But here we are, so maybe others survived too?</text>
+		<text id="third1">Now I bet you youngin’s are thinking this here’s the end of the world, but I thought the same during world war 3 and yet here we all are.</text>
+		<text id="third2">The way I sees it, we just got to make the best of the situation, and be glad there’s food to eat and company to share.</text>
+		<text id="third3">But how long will we have to live on this god-forsaken island?</text>
+		<text id="third4">Who knows? But as long as there’s life, there’s hope. Perhaps in time this island will be as good as home.</text>
+		<text id="fourth1">So tell us what you know of other survivors?</text>
+		<text id="fourth2">Most of us were scattered across different islands, but some of the islands have more survivors and even some working technology.</text>
+		<text id="fourth3">I’ve even heard rumors of an island with a nearly intact ship.</text>
+		<text id="fourth4">Could it still fly?</text>
+		<text id="fourth5">As I said, all I’ve heard are rumors. But even if it could, it’d be certain death. Best to stay on this planet, they don’t seem to care about us here.</text>
+	</section>
+	<section id="options">
+		<text id="options">Options</text>
+		<text id="paused">Game Paused</text>
+		<text id="music">Music Vol:</text>
+		<text id="sfx">SFX Vol:</text>
+		<text id="fullscreen">Fullscreen:</text>
+		<text id="textspeed">Text Speed:</text>
+		<text id="language">Language:</text>
+		<text id="controls">Controls</text>
+		<text id="achievements">Achievements</text>
+		<text id="title">Return to Title</text>
+		<text id="back">Back</text>
+		<text id="quitgame">Do you wish to return to the title screen? Any unsaved progress will be lost.</text>
+		<text id="keyboard">Keyboard</text>
+		<text id="controller">Controller</text>
+		<text id="import">Import Save</text>
+		<text id="export">Export Save</text>
+	</section>
+	<section id="controls">
+		<text id="left">Left:</text>
+		<text id="right">Right:</text>
+		<text id="up">Up:</text>
+		<text id="down">Down:</text>
+		<text id="select">Action:</text>
+		<text id="cancel">Cancel:</text>
+		<text id="inventory">Items:</text>
+		<text id="quest">Quests:</text>
+		<text id="device">Device:</text>
+		<text id="hotkey1">Use 1:</text>
+		<text id="hotkey2">Use 2:</text>
+	</section>
+	<section id="world">
+		<text id="start">Starting Island</text>
+	</section>
+</lang>

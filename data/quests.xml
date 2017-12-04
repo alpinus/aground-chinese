@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+	<quest id="hut" achievement="hut">
+		<item id="wood" count="8" />
+	</quest>
+	<quest id="storehouse" giver="builder" exp="6" achievement="storehouse">
+		<item id="wood" count="8" />
+		<item id="berries" count="5" />
+	</quest>
+	<quest id="storehouse2" exp="6" achievement="storehouse">
+		<item id="wood" count="8" />
+		<item id="berries" count="5" />
+		<canComplete>
+			<dialogue section="player" id="storehouse3" />
+			<complete quest="storehouse2" />
+			<sound id="build" />
+			<section with="fade">
+				<move object="player" x="28" />
+				<structure id="storehouse" x="player.tile_x" />
+				<object id="miner" x="player.tile_x-6" y="2" mine="true" />
+			</section>
+			<dialogue section="player" id="storehouse4" />
+		</canComplete>
+	</quest>
+	<quest id="smelter" giver="miner" exp="20" achievement="smelter">
+		<item id="coal" count="15" />
+	</quest>
+	<quest id="backpack" giver="builder" exp="20" achievement="backpack">
+		<item id="meat" count="5" />
+	</quest>
+	<quest id="kitchen" giver="builder" exp="20" achievement="kitchen">
+		<item id="wood" count="10" />
+		<item id="coal" count="10" />
+	</quest>
+	<quest id="kitchen2" giver="builder" exp="60">
+		<item id="wood" count="5" />
+		<item id="steel_bar" count="5" />
+	</quest>
+	<quest id="farm" giver="farmer" exp="10" achievement="farm">
+		<item id="wood" count="15" />
+		<item id="fruit" count="2" />
+	</quest>
+	<quest id="workshop" giver="miner" exp="40" achievement="workshop">
+		<item id="wood" count="5" />
+		<item id="iron_bar" count="5" />
+	</quest>
+	<quest id="market" giver="trader" exp="60" achievement="market">
+		<item id="gold_bar" count="5" />
+	</quest>
+	<quest id="dock" giver="trader" coins="500" exp="80" achievement="dock">
+		<item id="wood" count="20" />
+		<item id="cloth" count="5" />
+		<item id="net" count="5" />
+	</quest>
+	<quest id="dock2" exp="80" achievement="dock">
+		<item id="wood" count="20" />
+		<item id="steel_bar" count="5" />
+		<item id="gold_bar" count="5" />
+		<canComplete>
+			<dialogue section="player" id="dock3" />
+			<complete quest="dock2" />
+			<sound id="build" />
+			<section with="fade">
+				<move object="player" x="6" />
+				<structure id="dockhouse" x="0" />
+				<structure id="dock" x="-4" />
+			</section>
+			<dialogue section="player" id="dock4" />
+		</canComplete>
+	</quest>
+	<quest id="pen" giver="farmer" exp="60" achievement="pen">
+		<item id="pig" count="2" />
+		<item id="wood" count="8" />
+	</quest>
+	<quest id="boat" recipe="boat" exp="100" achievement="boat" />
+	<quest id="lab" giver="alchemist" exp="60" achievement="lab">
+		<item id="dragonblood" count="1" />
+	</quest>
+	<quest id="wyrm_pen" giver="alchemist" exp="250" achievement="wyrm_pen">
+		<item id="wyrm" count="2" />
+	</quest>
+</quests>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sounds>
+	<equipment id="bow"><sound id="bow" /></equipment>
+	<equipment id="arrow"><sound id="hit" /></equipment>
+	<equipment id="sword">
+		<sound id="miss" target="miss" />
+		<sound id="sword" />
+	</equipment>
+	<equipment id="axe">
+		<sound id="axe_tree" target="tree" />
+		<sound id="miss" target="miss" />
+		<sound id="axe" />
+	</equipment>
+	<equipment>
+		<sound id="miss" target="miss" />
+		<sound id="pick" target="tile" />
+		<sound id="hit" />
+	</equipment>
+	<object id="wyrm"><sound id="wyrm_death" target="death" /></object>
+	<object id="boar"><sound id="boar_death" target="death" /></object>
+	<object id="rat"><sound id="rat_death" target="death" /></object>
+	<object id="tree"><sound id="tree_felled" target="death" /></object>
+	<object><sound id="enemy" /><sound id="miss" target="miss" /></object>
+</sounds>

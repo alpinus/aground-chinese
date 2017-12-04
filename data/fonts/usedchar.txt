@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<lang keyboard="default">
+	<section id="common">
+		<text id="blocked">被挡住了!</text>
+		<text id="miss">没打着!</text>
+		<text id="critical_hit">暴击！</text>
+		<text id="weight">重量:</text>
+		<text id="save">游戏保存了</text>
+		<text id="del_save">存档删除</text>
+		<text id="save_corrupt">存档损坏! 开始新游戏.</text>
+		<text id="fuel">燃料</text>
+		<text id="add_fuel">加燃料</text>
+		<text id="all">全部</text>
+		<text id="equipment">装备</text>
+		<text id="attack">攻击:</text>
+		<text id="range">Range:</text>
+		<text id="defense">防御:</text>
+		<text id="cut">砍:</text>
+		<text id="mine">Mine:</text>
+		<text id="capacity">Carry:</text>
+		<text id="health">健康:</text>
+		<text id="stamina">耐力:</text>
+		<text id="ok">好的</text>
+		<text id="cancel">退出</text>
+		<text id="yes">好的</text>
+		<text id="no">不</text>
+		<text id="accept">接受</text>
+		<text id="reject">拒绝</text>
+		<text id="sell">卖</text>
+		<text id="buy">买</text>
+		<text id="drop_item">你要扔多少?</text>
+		<text id="eat_item">你要吃多少?</text>
+		<text id="store_item">你要存多少?</text>
+		<text id="retrieve_item">你要取回多少?</text>
+		<text id="sell_item">你要卖多少?</text>
+		<text id="buy_item">你要买多少?</text>
+		<text id="requires">-- 清单 --</text>
+		<text id="inventory">清单</text>
+		<text id="quests">任务日志</text>
+		<text id="smelter">熔炉</text>
+		<text id="kitchen">厨房</text>
+		<text id="workshop">工作间</text>
+		<text id="storehouse">库房</text>
+		<text id="dockhouse">船坞</text>
+		<text id="harvest">收割</text>
+		<text id="manage">管理</text>
+		<text id="feed">喂养</text>
+		<text id="lab">实验室</text>
+		<text id="coins">金币</text>
+		<text id="per_hit">per Hit:</text>
+		<text id="move">移动</text>
+		<text id="newgame">新游戏</text>
+		<text id="continue">继续</text>
+		<text id="options">选项</text>
+		<text id="exit">退出</text>
+		<text id="forums">社区</text>
+		<text id="empty">空</text>
+		<text id="empty_slot">&lt; 没有存档 &gt;</text>
+		<text id="corrupt_slot">损坏的存档</text>
+		<text id="overwrite">你确定你要覆盖这个存档么？</text>
+		<text id="none">没有</text>
+		<text id="additions">农场附属</text>
+		<text id="addition_slots">附加:</text>
+		<text id="trap_overlap">[color=770000]你不能在陷阱上头再摞一个陷阱![/color]</text>
+		<text id="placed">安放妥当</text>
+		<text id="collect">收集</text>
+		<text id="level_up">升级!</text>
+		<text id="level">等级:</text>
+		<text id="experience">经验</text>
+		<text id="hotkey">选择道具</text>
+		<text id="retry">重试</text>
+		<text id="title">标题</text>
+		<text id="move_all">移动全部</text>
+		<text id="melee_equip">用 {item} 攻击</text>
+		<text id="ranged_equip">点燃 {item}</text>
+		<text id="add_animal">增加动物</text>
+		<text id="select_feed">选择喂养</text>
+		<text id="feed_count">你要喂多少?</text>
+	</section>
+	<section id="actions">
+		<text id="drop">丢弃</text>
+		<text id="place">放置</text>
+		<text id="use">使用</text>
+		<text id="equip">装备</text>
+		<text id="unequip">脱下</text>
+		<text id="fire">点火</text>
+		<text id="eat">吃</text>
+		<text id="loot">Loot Corpse</text>
+		<text id="feed">Feed</text>
+		<text id="collect">收集</text>
+	</section>
+	<section id="item.names">
+		<text id="wood">木头</text>
+		<text id="coal">煤</text>
+		<text id="iron">铁矿</text>
+		<text id="quartz">Quartz</text>
+		<text id="gold">金矿</text>
+		<text id="diamond">Diamond</text>
+		<text id="sulfur">Sulfur</text>
+		<text id="oil">Raw Oil</text>
+		<text id="titanium">Titanium</text>
+		<text id="uranium">Uranium</text>
+		<text id="iron_bar">钢锭</text>
+		<text id="steel_bar">铁锭</text>
+		<text id="gold_bar">金条</text>
+		<text id="meat">肉</text>
+		<text id="fruit">果实</text>
+		<text id="wheat">小麦</text>
+		<text id="eggs">鸡蛋</text>
+		<text id="milk">牛奶</text>
+		<text id="sugar">糖</text>
+		<text id="steak">Steak</text>
+		<text id="bread">面包</text>
+		<text id="pie">派</text>
+		<text id="pancakes">煎饼</text>
+		<text id="hamburger">汉堡</text>
+		<text id="cheese">奶酪</text>
+		<text id="pizza">披萨</text>
+		<text id="omelette">Omelette</text>
+		<text id="cheeseburger">Cheeseburg</text>
+		<text id="cake">Cake</text>
+		<text id="candy_apple">Candy Apple</text>
+		<text id="dragonblood">Dragonblood</text>
+		<text id="stone_axe">石头斧子</text>
+		<text id="stone_pickaxe">石头凿子</text>
+		<text id="coin_purse">Coin Purse</text>
+		<text id="iron_pickaxe">Iron Pick</text>
+		<text id="iron_sword">钢剑</text>
+		<text id="iron_armor">钢盔甲</text>
+		<text id="steel_pickaxe">钢镐</text>
+		<text id="steel_sword">铁剑</text>
+		<text id="steel_armor">铁盔甲</text>
+		<text id="bow">弓</text>
+		<text id="arrow">弓矢</text>
+		<text id="backpack">背包</text>
+		<text id="mega_backpack">超级背包</text>
+		<text id="magic_backpack">魔法背包</text>
+		<text id="magic_box">魔法书</text>
+		<text id="cloth">衣服</text>
+		<text id="net">网</text>
+		<text id="berries">浆果</text>
+		<text id="red_berries">红浆果</text>
+		<text id="health_potion">血瓶</text>
+		<text id="stamina_potion">Sta 药水</text>
+		<text id="attack_potion">攻击药水</text>
+		<text id="defense_potion">防御药水</text>
+		<text id="speed_potion">速度药水</text>
+		<text id="endurance_potion">End Potion</text>
+		<text id="pig">猪</text>
+		<text id="wyrm">冰龙</text>
+		<text id="cocoon">茧</text>
+		<text id="dragon">小龙</text>
+		<text id="boat">船</text>
+		<text id="fence">篱笆</text>
+		<text id="torch">火炬</text>
+		<text id="trap">陷阱</text>
+	</section>
+	<section id="item.descriptions">
+		<text id="coin_purse">Allows coins.</text>
+		<text id="boat">航行世界.</text>
+		<text id="fence">御敌门外.</text>
+		<text id="torch">+1 sight next 20 tiles mined.</text>
+		<text id="trap">陷阱：4点上海.</text>
+		<text id="red_berries">+1 atk next hit.</text>
+		<text id="magic_box">Contains everything.</text>
+		<text id="health_potion">+10 max health.</text>
+		<text id="stamina_potion">+20 max stamina.</text>
+		<text id="attack_potion">+1 atk next 2 hits.</text>
+		<text id="defense_potion">+1 def next 2 hits.</text>
+		<text id="speed_potion">速度加快.</text>
+		<text id="endurance_potion">Increases endurance.</text>
+	</section>
+	<section id="achievement.names">
+		<text id="hut">帐篷</text>
+		<text id="boar">瞬间割肉</text>
+		<text id="storehouse">无限的空间</text>
+		<text id="farm">Sharecropping</text>
+		<text id="orchard">Apples</text>
+		<text id="smelter">冶金术</text>
+		<text id="kitchen">Bon Appetit</text>
+		<text id="backpack">高载重</text>
+		<text id="workshop">Crafting Time</text>
+		<text id="wyrm">Wyrmslayer</text>
+		<text id="golem">Rockslayer</text>
+		<text id="diamond">闪闪亮</text>
+		<text id="market">交易愉快</text>
+		<text id="bigpack">Heavier Lifter</text>
+		<text id="capture_wyrm">Get Wyrm</text>
+		<text id="pen">Milking Pigs</text>
+		<text id="pizza">嗯~奶酪</text>
+		<text id="dock">Distant Shores</text>
+		<text id="boat">Setting Sail</text>
+		<text id="lab">Experiments</text>
+		<text id="wyrm_pen">Infinite Blood</text>
+		<text id="dragon">Hatchling</text>
+	</section>
+	<section id="achievement.descriptions">
+		<text id="hut">盖一顶 [color=ff2222]帐篷[/color].</text>
+		<text id="boar">干死一头 [color=ff2222]野猪[/color].</text>
+		<text id="storehouse">建造 [color=ff2222]仓库[/color].</text>
+		<text id="farm">建造 [color=ff2222]农场[/color].</text>
+		<text id="orchard">给 [color=ff2222]农场[/color]加一个 [color=ff2222]果园[/color] .</text>
+		<text id="smelter">建一座 [color=ff2222]熔炉[/color].</text>
+		<text id="kitchen">建一座 [color=ff2222]厨房[/color].</text>
+		<text id="backpack">得到 [color=ff2222]背包[/color].</text>
+		<text id="workshop">Build the [color=ff2222]Workshop[/color].</text>
+		<text id="wyrm">Defeat a [color=ff2222]Wyrm[/color].</text>
+		<text id="golem">Defeat a [color=ff2222]Golem[/color].</text>
+		<text id="diamond">Mine a [color=ff2222]Diamond[/color].</text>
+		<text id="market">Build the [color=ff2222]Market[/color].</text>
+		<text id="bigpack">Buy a [color=ff2222]Super Pack[/color].</text>
+		<text id="capture_wyrm">Now what do I do with it?</text>
+		<text id="pen">Add a [color=ff2222]Pen[/color] to the [color=ff2222]Farm[/color].</text>
+		<text id="pizza">烘焙一个 [color=ff2222]披萨[/color].</text>
+		<text id="dock">Build the [color=ff2222]Dock[/color].</text>
+		<text id="boat">建一艘 [color=ff2222]船[/color].</text>
+		<text id="lab">Build the [color=ff2222]Laboratory[/color].</text>
+		<text id="wyrm_pen">Build the [color=ff2222]Wyrm Pen[/color].</text>
+		<text id="dragon">Hatch a [color=ff2222]Dragon[/color] fron a [color=ff2222]Cocoon[/color].</text>
+	</section>
+	<section id="structure">
+		<text id="wheat">麦子地</text>
+		<text id="orchard">Orchard</text>
+		<text id="pen">Pen</text>
+		<text id="produces">-- 制作 --</text>
+		<text id="requires">-- 需要 --</text>
+	</section>
+	<section id="structure.tooltip">
+		<text id="hut">在帐篷里休息</text>
+		<text id="storehouse">进入仓库</text>
+		<text id="workshop">工坊里的玩意儿</text>
+		<text id="smelter">提炼矿石</text>
+		<text id="kitchen">下厨做饭</text>
+		<text id="farm">进入农场</text>
+		<text id="food_market">和食物商交易</text>
+		<text id="weaps_market">和武器商交易</text>
+		<text id="mineral_market">Trade with Ore Merchant</text>
+		<text id="dockhouse">进入船坞</text>
+		<text id="boat">航海</text>
+		<text id="lab">制药</text>
+		<text id="wyrm_pen">Manage Wyrm Pen</text>
+	</section>
+	<section id="object.tooltip">
+		<text id="bush">摘浆果</text>
+		<text id="tree">砍树</text>
+		<text id="enemy">攻击</text>
+	</section>
+	<section id="warning">
+		<text id="weight">负重太多了!</text>
+		<text id="stamina">力尽了，正在损伤健康！</text>
+		<text id="growing">还在生长，晚点再来吧。</text>
+		<text id="additions">农场空地不够了</text>
+		<text id="focus">Click for Focus</text>
+		<text id="ingredients">原料不足。</text>
+		<text id="place_surface">You cannot place objects below the surface.</text>
+		<text id="place_overlap">You cannot place objects on top of objects.</text>
+		<text id="no_effect">不会有任何效果</text>
+		<text id="drop_instead">你要把它们丢弃么？</text>
+		<text id="cannot_fire">没有 {weapon}{projectile} 无法发射</text>
+	</section>
+	<section id="market">
+		<text id="restock">咱们应该扩充库存!</text>
+	</section>
+	<section id="quests">
+		<text id="new">新任务!</text>
+		<text id="none">你目前没有任务.</text>
+		<text id="requires">-- 需求 --</text>
+		<text id="complete">-- 已完成 --</text>
+		<text id="hut">搭帐篷</text>
+		<text id="storehouse">建仓库</text>
+		<text id="storehouse2">建仓库</text>
+		<text id="smelter">熔炉</text>
+		<text id="backpack">背包</text>
+		<text id="workshop">手艺作坊</text>
+		<text id="kitchen">建造厨房</text>
+		<text id="kitchen2">升级厨房</text>
+		<text id="farm">建造农场</text>
+		<text id="market">建筑市场</text>
+		<text id="dock">建筑站</text>
+		<text id="dock2">建筑站</text>
+		<text id="pen">建造大笔</text>
+		<text id="boat">建造船</text>
+		<text id="lab">魔法材料</text>
+		<text id="wyrm_pen">冰龙笔</text>
+	</section>
+	<section id="quest.description">
+		<text id="hut">你得在暴风里为营地建一顶 [color=550000]帐篷[/color] .</text>
+		<text id="storehouse">要建一座 [color=550000]仓库[/color].</text>
+		<text id="storehouse2">建一座 [color=550000]仓库[/color] 来放置你的物品.</text>
+		<text id="smelter">需要一个 [color=550000]冶炼厂[/color] 来提炼矿石。</text>
+		<text id="backpack">will give you his backpack for some [item=meat].</text>
+		<text id="workshop">需要一个 [color=550000]工坊[/color] 制造金属工具</text>
+		<text id="kitchen">想要建一个 [color=550000]厨房[/color] 来烹饪。</text>
+		<text id="kitchen2">想要一个 [color=550000]厨房[/color] 做 [item=cheese].</text>
+		<text id="farm">要建一个 [color=550000]农场[/color] 肿庄稼。</text>
+		<text id="market">想建一个 [color=550000]市场[/color] 交易货物。</text>
+		<text id="dock">想要一个 [color=550000]船坞[/color] 周游世界。</text>
+		<text id="dock2">建一个 [color=550000]船坞[/color] 寻找其他的幸存者。</text>
+		<text id="pen">wants to add a [color=550000]Pen[/color] to house livestock.</text>
+		<text id="boat">环游世界的时候到了！ 在 [color=550000]船坞[/color]建一个 [item=boat] 。</text>
+		<text id="lab">wants to experiment with [item=dragonblood].</text>
+		<text id="wyrm_pen">wants to experiment on [item=wyrm]s.</text>
+	</section>
+	<section id="npc">
+		<text id="talk">对话</text>
+		<text id="builder">建筑工</text>
+		<text id="miner">矿工</text>
+		<text id="farmer">农民</text>
+		<text id="trader">商人</text>
+		<text id="alchemist">炼金术师</text>
+	</section>
+	<section id="builder">
+		<text id="intro">你真想在这里生存? 没戏的哥们.</text>
+		<text id="introduce1">你很擅长建筑吧？建刚仓库来储存咱们收集来的资源怎么样？</text>
+		<text id="introduce2">嗯，我猜用 [var=quest.storehouse.wood] [item=wood] 和 [var=quest.storehouse.berries] [item=berries] 我就能建一座 [color=770000]仓库[/color].</text>
+		<text id="accept1">好的，我能找到！没问题！</text>
+		<text id="accept2">拿上这个 [item=stone_axe], 如果你喜欢的话</text>
+		<text id="stamina">我快饿死了，我看你也累了，咱们应该 [color=770000]帐篷[/color] 里休息休息来保存游戏进度顺便保存 [tile=stamina] [color=006600]体力[/color].</text>
+		<text id="wood">我的老斧子 [item=stone_axe]咋样? 我敢打赌你用它砍几下 [key=select] 就可以把树砍倒。</text>
+		<text id="meat">尝试靠近它们的时候按 [key=select] 杀几头 [color=770000][tile=boar] 野猪[/color] 。</text>
+		<text id="hint1">All items go into your inventory when you collect them. You can check it by hitting [key=inventory].</text>
+		<text id="hint2">如果你的 [tile=stamina] [color=006600]耐力[/color] 耗尽，你会降低 [tile=health] [color=770000]健康[/color], 如果你的 [tile=health] [color=770000]健康[/color] 耗尽,你会挂的。</text>
+		<text id="hint3">这就是为什么你需要吃 [item=berries], [item=fruit] and [item=meat]. You can do this by selecting them in your inventory.</text>
+		<text id="storehouse1">你把该用的东西都准备好了？厉害啊！</text>
+		<text id="storehouse2">咱们开始建 [color=770000]仓库[/color] !</text>
+		<text id="storehouse3">看啊！ 是不是很有成就感？</text>
+		<text id="storehouse4">耶！事实上，他们会很有用。 咱们现在可以忽略因为拿太多东西造成的疲劳疲劳啦！</text>
+		<text id="farmer">怎们应该跟 [color=770000][tile=farmer] 农民[/color]达成共识，我打赌他能帮咱们种出很多美味的食物。</text>
+		<text id="miner">你看到那个从土里钻出来的 [color=770000][tile=miner] 矿工[/color] 了么？你去瞧瞧她吧。</text>
+		<text id="kitchen1">你觉得建一个 [color=770000]厨房[/color]怎么样？ [item=meat] 很好，但是做熟的更棒！</text>
+		<text id="kitchen2">我需要 [var=quest.kitchen.wood] [item=wood] 和 [var=quest.kitchen.coal] [item=coal] 来建造一个 [color=770000]厨房[/color].</text>
+		<text id="kitchen3">万事俱备，咱们把 [color=770000]厨房[/color] 建起来！</text>
+		<text id="kitchen4">你可以在 [color=770000]厨房[/color] 做饭只要你有 [item=wood] 或者 [item=coal] 作为燃料。</text>
+		<text id="kitchen5">You know what I’m craving? Some [item=cheese]. Nothing is quite as delicious.</text>
+		<text id="kitchen6">我可以升级 [color=770000]厨房[/color] 来制作 [item=cheese] and cook new recipes for [var=quest.kitchen2.wood] [item=wood] and [var=quest.kitchen2.steel_bar] [item=steel_bar].</text>
+		<text id="kitchen7">看来万事俱备了，咱们把 [color=770000]厨房[/color] 升级咯！</text>
+		<text id="kitchen8">Try out some of the new recipes! It almost feels civilized!</text>
+		<text id="farm">Man, I'm hungry. I hope you get that [color=770000]Farm[/color] finished soon!</text>
+		<text id="backpack1">嘿，为[color=770000]熔炉[/color]搬那么多 [item=coal] 不累么？我拿我的 [item=backpack] 换 [var=quest.backpack.meat] [item=meat].</text>
+		<text id="backpack2">我要弄点 [item=meat], 但是我的 [item=stone_axe]已经给你了。</text>
+		<text id="backpack3">太棒了！谢谢你的 [item=meat]! 这是我许诺的 [item=backpack].</text>
+	</section>
+	<section id="farmer">
+		<text id="introduce1">小伙子很高兴见到你，我还在琢磨是不是在这空旷的世界里只有我这一个老头。</text>
+		<text id="introduce2">我这把老骨头还有点生气儿，我盘算我能帮你的忙，我负责种地，咱们都需要食物来过活。</text>
+		<text id="introduce3">咱们建个粮仓搞个 [color=770000]农场[/color] 咋样？</text>
+		<text id="farm1">棒啊！我这就弄好粮仓种点庄稼。</text>
+		<text id="farm2">现在咱们拥有了一个 [color=770000]农场[/color]! Stop by on occasion to pick up growin' crops - they will help restore your [tile=stamina] [color=006600]Stamina[/color]. Here - take some [item=bread] to keep you going while it grows.</text>
+		<text id="farm3">通过砍树可以得到 [item=wood] 和 [item=fruit] 。</text>
+		<text id="farm4">如果你想多种些, we can add up to four wheat fields or orchards. You can add these in the barn.</text>
+		<text id="farm5">Look at our awesome [color=770000]Farm[/color]! It's as good as anything I used to grow back home!</text>
+		<text id="kitchen">Raw [item=wheat] isn’t very tasty, but I bet we could make something better if you and the [color=770000][tile=builder] Builder[/color] made a [color=770000]Kitchen[/color].</text>
+		<text id="pen1">你知道 [color=770000]农场[/color] 需要什么？ Some Livestock! How about capturing some [color=770000][tile=boar] Boars[/color] with a [item=net] from the [color=770000]Market[/color]?</text>
+		<text id="pen2">I’ll add a [color=770000]Pen[/color] for [var=quest.pen.pig] [item=pig] and [var=quest.pen.wood] [item=wood].</text>
+		<text id="pen3">Now aren't those the fattest and juiciest looking [item=pig]s you've ever seen?</text>
+		<text id="pen4">With the pen, we can now produce [item=meat], [item=milk] and [item=eggs]!</text>
+		<text id="pig">How do you get a [item=pig]? Lay a [item=net] on the ground and then lure a [color=770000][tile=boar] Boar[/color] onto it, and poof! It’ll be caught and domesticated!</text>
+		<text id="kitchen2">Milking a [item=pig]? Why not? This is a strange land. They even lay [item=eggs]! But what we could really use is some [item=cheese] - talk to the [color=770000][tile=builder] Builder[/color] about improving the [color=770000]Kitchen[/color].</text>
+	</section>
+	<section id="miner">
+		<text id="introduce1">哦！嘿！我没想到还有其他的幸存者！</text>
+		<text id="introduce2">我一直在地下，到这还有更多的路通向这里，比你看到的多多了。</text>
+		<text id="introduce3">如果你也想瞧瞧，我有个多余的镐。</text>
+		<text id="smelter">挖的怎么样了？也许咱们应该建一个 [color=770000]熔炉[/color] 把矿物炼成条。</text>
+		<text id="accept1">太好了！你有足够多[item=coal]的时候告诉我！</text>
+		<text id="smelter1">就是这个! 我得尽快弄个 [color=770000]熔炉[/color] ！</text>
+		<text id="smelter2">[color=770000]熔炉[/color] 可以把矿石炼成铁锭，这需要燃料来熔炼，很幸运这周围有足够的[item=coal] 来烧。</text>
+		<text id="hint1">嘿，你还在等啥？点击 [key=down] 往下挖找到矿石!</text>
+		<text id="hint2">矿石很沉务必要放在 [color=770000]仓库[/color]里存起来。</text>
+		<text id="hint3">It’s easy to get caught up mining, but make sure you have enough [tile=stamina] [color=006600]Stamina[/color] for the return trip.</text>
+		<text id="hint4">The deeper underground you go, the better ores you will find.</text>
+		<text id="workshop1">How about a [color=770000]Workshop[/color] to turn those metal bars into tools? I can make one for [var=quest.workshop.iron_bar] [item=iron_bar] and [var=quest.workshop.wood] [item=wood].</text>
+		<text id="workshop2">Alright, lets get this [color=770000]Workshop[/color] set up!</text>
+		<text id="workshop3">At the [color=770000]Workshop[/color], you can instantly create any tools or items that you have the ingredients to make.</text>
+		<text id="workshop4">你需要找到 [item=iron] 放进[color=770000]熔炉[/color] 里炼出 [item=iron_bar] 。</text>
+		<text id="smelter3">一旦你有足够的 [item=iron], 选择[color=770000]熔炉[/color] 菜单里的 [item=iron_bar]  , 如果熔炉里有足够的燃料就会自动炼造。</text>
+		<text id="smelter4">You can add as many jobs to the [color=770000]Smelter[/color] as you have ingredients for, and it will 熔炉 them one by one while you are away as long as it has fuel.</text>
+		<text id="pick">If you want to mine through [color=770000][tile=stone] Stone[/color] to reach [item=gold], you'll need to craft a [item=iron_pickaxe] or [item=steel_pickaxe] at the [color=770000]Workshop[/color].</text>
+		<text id="equip">Equipment is automatically equipped as long as it is in your inventory. It can increase your attack, defense or mining speed, but be careful, as most equipment has weight.</text>
+		<text id="hotkey">你也可以用 [color=770000]热键[/color] \n按 [key=hotkey1] 或者 清单里的[key=hotkey2] 键设置</text>
+	</section>
+	<section id="trader">
+		<text id="steal"> [item={item}] 被从 [color=770000]仓库[/color]偷走了！</text>
+		<text id="caught">贼被捉住，人赃并获！</text>
+		<text id="introduce1">没有贼偷走东西生存已经够难的了！</text>
+		<text id="introduce2">我可能是借走了一些东西，但是，听着！我会以我的服务作为回报！我有和其他岛的商人做交易的路子！</text>
+		<text id="introduce3">商人？还有别的幸存者？</text>
+		<text id="introduce4">是的，但是我需要 [var=quest.market.gold_bar] [item=gold_bar]来说服他们过来</text>
+		<text id="introduce5">You’re going to charge us when you were just caught stealing?!</text>
+		<text id="introduce6">That was that. This is business. My offer is [var=quest.market.gold_bar] [item=gold_bar]s to add this island to the trade route.</text>
+		<text id="introduce7">Fine. If there are other survivors out there, trading with them could get us off this island.</text>
+		<text id="introduce8">对不起，我不能相信一个贼，离开这个岛永远别再回来。</text>
+		<text id="introduce9">There are better islands to steal from anyways. You don’t even know what you’re missing.</text>
+		<text id="market1">Perfect! I feel this is the beginning of many lucrative trades between us.</text>
+		<text id="market2">拿着这个 [item=coin_purse]. You’ll need it to store coins for buying and selling. I recommend buying a [item=mega_backpack] as soon as you can, they are a real life-saver!</text>
+		<text id="market3">At the [color=770000]Market[/color], you can sell goods to get coins, which you can use to buy other goods.</text>
+		<text id="market4"> [color=770000]市场[/color] 有时候也有新库存，所以如果你弄不到或者库存售罄的时候一会再来看看。</text>
+		<text id="market5">要制造 [item=gold_bar]，你得有一个熔炉 [item=gold],来自地下。  [color=770000][tile=miner] 矿工[/color] 可能有深层采矿的提示。</text>
+		<text id="dock1">你对探索这个世界感兴趣么？ 建一个 [color=770000]Dock[/color]如何？</text>
+		<text id="dock2">如果你给我 [var=quest.dock.coins] [color=770000][tile=coin_purse.ico] 金币[/color], [var=quest.dock.wood] [item=wood], [var=quest.dock.cloth] [item=cloth] 和 [var=quest.dock.net] [item=net]我就给你建。</text>
+		<text id="dock3">太棒了！咱们建 [color=770000]船坞[/color] 吧！</text>
+		<text id="dock4">一旦你造了在[color=770000]船坞[/color] 造了[item=boat] ，你就可以漂洋过海了！</text>
+		<text id="dock5"> [color=770000]船坞[/color] 要花费 [var=quest.dock.coins] [color=770000][tile=coin_purse.ico] 金币[/color], [var=quest.dock.wood] [item=wood], [var=quest.dock.cloth] [item=cloth] 和 [var=quest.dock.net] [item=net].</text>
+		<text id="accept">接受</text>
+		<text id="reject">放逐</text>
+	</section>
+	<section id="alchemist">
+		<text id="introduce1">这个星球上有更多咱们没见到的东西。 I have been doing experiments, and I believe I have discovered magic!</text>
+		<text id="introduce2">我需要更多的材料，如果你遇到了 [item=dragonblood], 把它给我，我会好好回报你的。</text>
+		<text id="lab1">我就知道！这就是秘密！我必须立刻建一座实验室！</text>
+		<text id="lab2">你的报酬？Bring materials to my lab and I will mix up a magic potion for you.</text>
+		<text id="lab3">快点！My research is at a standstill until I get some [item=dragonblood]!</text>
+		<text id="pen1">I need more [item=dragonblood]! Bring me [var=quest.wyrm_pen.wyrm] live [item=wyrm]s and we'll have an endless supply of [item=dragonblood] to experiment with!</text>
+		<text id="pen2">棒极了！ Stand back while I work my magic!</text>
+		<text id="pen3">Behold my brilliant invention - the [color=770000]Wyrm Pen[/color]! It's more than just a pen, it's an endless supply of [item=dragonblood]!</text>
+		<text id="wyrm">我打赌你能用 [item=net]逮住 [item=wyrm]， 但是它们必须是全须全尾的！</text>
+	</section>
+	<section id="player">
+		<text id="storm1">暴风刮的更厉害了，我得找个地方躲躲，但是周围除了枯树杈子啥都没有！</text>
+		<text id="storm2">我得试着建一个[color=770000]帐篷[/color]. [var=quest.hut.wood] [item=wood] 就可以了。</text>
+		<text id="storm3">好累啊... 我快拿不动这些 [item=wood]. 每走一步我就能在 [color=770000]帐篷[/color] 里休息啦.</text>
+		<text id="storehouse1">这把斧头挺趁手的用它没准能建一座 [color=770000]仓库[/color] 来存放我收集来的东西。</text>
+		<text id="storehouse2">我打赌我能够用 [var=quest.storehouse.wood] [item=wood] 和 [var=quest.storehouse.berries] [item=berries]建个仓库。</text>
+		<text id="storehouse3">好嘞！咱们整个仓库！</text>
+		<text id="storehouse4">完美， 这下我得避免因为抗太多东西消耗体力。</text>
+		<text id="dock1">我在想这个贼说到的其他生还者是真的么？</text>
+		<text id="dock2">也许我需要我建一个 [color=770000]船坞[/color] to set out and find them. It'll take [var=quest.dock2.wood] [item=wood], [var=quest.dock2.steel_bar] [item=steel_bar] 和 [var=quest.dock2.gold_bar] [item=gold_bar].</text>
+		<text id="dock3">好了！咱们把 [color=770000]船坞[/color] 建成吧！</text>
+		<text id="dock4">现在咱们只要在[color=770000]Dock[/color]里造一艘 [item=boat] 了！</text>
+	</section>
+	<section id="scene.hut">
+		<text id="first1">作为我第一顶帐篷还不赖.</text>
+		<text id="first2">救命！[pause=4] 拜托……[pause=4] 庇护所……</text>
+		<text id="first3">有人在外面！要相信他么？</text>
+		<text id="first4">感激不尽！我欠你一条命。但是我们接下来怎么办？</text>
+		<text id="first5">目前，咱们取暖把自己烤干</text>
+		<text id="first6">但是之后呢？咱们怎么在这个鸟不拉屎的小岛生存？</text>
+		<text id="first7">有什么办法么？咱们被困在这了，没有退路了。</text>
+		<text id="first8">至少咱们可以试试。可能在这活命也没你想的那么糟。</text>
+		<text id="first9">拜托……[pause=4] 救命……</text>
+		<text id="second1">在我来这的时候我刚开始挖坑所以风暴来了我都不知道。</text>
+		<text id="second2">但我很高兴你能来这。我老是吃脏东西了，一整天在地底下呆着这又没有火之类的烤。</text>
+		<text id="second3">你们觉得外面还有其他的幸存者么？</text>
+		<text id="second4">说实在的，我很惊讶船沉了还有人能活着。但是咱们好好的，也许还有别人也活着？</text>
+		<text id="third1">我打赌你正琢磨这里是世界的尽头，但是我想在第三次世界大战到现在为止Now I bet you youngin’s are thinking this here’s the end of the world, but I thought the same during world war 3 and yet here we all are.</text>
+		<text id="third2">The way I sees it, we just got to make the best of the situation, and be glad there’s food to eat and company to share.</text>
+		<text id="third3">但是咱们要在这被上帝遗弃的岛上呆多久？</text>
+		<text id="third4">谁知道？但是自打有生命以来就产生了希望，也许没多久这个岛就能像家一样温馨.</text>
+		<text id="fourth1">那么告诉我们其他生还者的事情吧。</text>
+		<text id="fourth2">Most of us were scattered across different islands, but some of the islands have more survivors and even some working technology.</text>
+		<text id="fourth3">I’ve even heard rumors of an island with a nearly intact ship.</text>
+		<text id="fourth4">它还能飞起来么？</text>
+		<text id="fourth5">就像我说的，咱们听到的都是传闻，但是只要可能，就是致命的，做好留在这个星球，看起来他们不在意咱们在这里。</text>
+	</section>
+	<section id="options">
+		<text id="options">选项</text>
+		<text id="paused">游戏暂停</text>
+		<text id="music">音乐音量:</text>
+		<text id="sfx">音效音量:</text>
+		<text id="fullscreen">全屏:</text>
+		<text id="textspeed">文本速度:</text>
+		<text id="language">语言:</text>
+		<text id="controls">控制</text>
+		<text id="achievements">成就</text>
+		<text id="title">回到主菜单</text>
+		<text id="back">后退</text>
+		<text id="quitgame">你要回到主菜单么? 没有保存的进度将会丢失.</text>
+		<text id="keyboard">键盘</text>
+		<text id="controller">控制器</text>
+		<text id="import">导入保存</text>
+		<text id="export">导出保存</text>
+	</section>
+	<section id="controls">
+		<text id="left">左:</text>
+		<text id="right">右:</text>
+		<text id="up">上:</text>
+		<text id="down">下:</text>
+		<text id="select">行动:</text>
+		<text id="cancel">退出:</text>
+		<text id="inventory">道具:</text>
+		<text id="quest">Quests:</text>
+		<text id="device">设备:</text>
+		<text id="hotkey1">使用 1:</text>
+		<text id="hotkey2">使用 2:</text>
+	</section>
+	<section id="world">
+		<text id="start">开始的小岛</text>
+	</section>
+</lang>
+
+的　一　是　在　不　了　有　和　人　这　中　大　为　上　个　国　我　以　要　他　时　来　用　们　生　到　作　地　于　出　就　分　对　成　会　可　主　发　年　动　同　工　也　能　下　过　子　说　产　种　面　而　方　后　多　定　行　学　法　所　民　得　经　十　三　之　进　着　等　部　度　家　电　力　里　如　水　化　高　自　二　理　起　小　物　现　实　加　量　都　两　体　制　机　当　使　点　从　业　本　去　把　性　好　应　开　它　合　还　因　由　其　些　然　前　外　天　政　四　日　那　社　义　事　平　形　相　全　表　间　样　与　关　各　重　新　线　内　数　正　心　反　你　明　看　原　又　么　利　比　或　但　质　气　第　向　道　命　此　变　条　只　没　结　解　问　意　建　月　公　无　系　军　很　情　者　最　立　代　想　已　通　并　提　直　题　党　程　展　五　果　料　象　员　革　位　入　常　文　总　次　品　式　活　设　及　管　特　件　长　求　老　头　基　资　边　流　路　级　少　图　山　统　接　知　较　长　将　组　见　计　别　她　手　角　期　根　论　运　农　指　几　九　区　强　放　决　西　被　干　做　必　战　先　回　则　任　取　据　处　队　南　给　色　光　门　即　保　治　北　造　百　规　热　领　七　海　地　口　东　导　器　压　志　世　金　增　争　济　阶　油　思　术　极　交　受　联　什　认　六共　权　收　证　改　清　已　美　再　采　转　更　单　风　切　打　白　教　速　花　带　安　场　身　车　例　真　务　具　万　每　目　至　达　走　积　示　议　声　报　斗　完　类　八　离　华　名　确　才　科　张　信　马　节　话　米　整　空　元　况　今　集　温　传　土　许　步　群　广　石　记　需　段　研　界　拉　林　律　叫　且　究　观　越　织　装　影　算　低　持　音　众　书　布　复　容　儿　须　际　商　非　验　连　断　深　难　近　矿　千　周　委　素　技　备　半　办　青　省　列　习　响　约　支　般　史　感　劳　便　团　往　酸　历　市　克　何　除　消　构　府　称　太　准　精　值　号　率　族　维　划　选　标　写　存　候　毛　亲　快　效　斯　院　查　江　型　眼　王　按　格　养　易　置　派　层　片　始　却　专　状　育　厂　京　识　适　属　圆　包　火　住　调　满　县　局　照　参　红　细　引　听　该　铁　价　严　首　底　液　官　德　调　随　病　苏　失　尔　死　讲　配　女　黄　推　显　谈　罪　神　艺　呢　席　含　企　望　密　批　营　项　防　举　球　英　氧　势　告　李　台　落　木　帮　轮　破　亚　师　围　注　远　字　材　排　供　河　态　封　另　施　减　树　溶　怎　止　案　言　士　均　武　固　叶　鱼　波　视　仅　费　紧　爱　左　章　早　朝　害　续　轻　服　试　食　充　兵　源　判　护　司　足　某　练　差　致　板　田　降　黑　犯　负　击　范　继　兴　似　余　坚　曲　输　修　的　故　城　夫　够　送　笔　船　占　右　财　吃　富　春　职　觉　汉　画　功　巴　跟　虽　杂　飞　检　吸　助　升　阳　互　初　创　抗　考　投　坏　策　古　径　换　未　跑　留　钢　曾　端　责　站　简　述　钱　副　尽　帝　射　草　冲　承　独　令　限　阿　宣　环　双　请　超　微　让　控　州　良　轴　找　否　纪　益　依　优　顶　础　载　倒　房　突　坐　粉　敌　略　客　袁　冷　胜　绝　析　块　剂　测　丝　协　重　诉　念　陈　仍　罗　盐　友　洋　错　苦　夜　刑　移　频　逐　靠　混　母　短　皮　终　聚　汽　村　云　哪　既　距　卫　停　烈　央　察　烧　行　迅　境　若　印　洲　刻　括　激　孔　搞　甚　室　待　核　校　散　侵　吧　甲　游　久　菜　味　旧　模　湖　货　损　预　阻　毫　普　稳　乙　妈　植　息　扩　银　语　挥　酒　守　拿　序　纸　医　缺　雨　吗　针　刘　啊　急　唱　误　训　愿　审　附　获　茶　鲜　粮　斤　孩　脱　硫　肥　善　龙　演　父　渐　血　欢　械　掌　歌　沙　著　刚　攻　谓　盾　讨　晚　粒　乱　燃　矛　乎　杀　药　宁　鲁　贵　钟　煤　读　班　伯　香　介　迫　句　丰　培　握　兰　担　弦　蛋　沉　假　穿　执　答　乐　谁　顺　烟　缩　征　脸　喜　松　脚　困　异　免　背　星　福　买　染　井　概　慢　怕　磁　倍　祖　皇　促　静　补　评　翻　肉　践　尼　衣　宽　扬　棉　希　伤　操　垂　秋　宜　氢　套　笔　督　振　架　亮　末　宪　庆　编　牛　触　映　雷　销　诗　座　居　抓　裂　胞　呼　娘　景　威　绿　晶　厚　盟　衡　鸡　孙　延　危　胶　还　屋　乡　临　陆　顾　掉　呀　灯　岁　措　束　耐　剧　玉　赵　跳　哥　季　课　凯　胡　额　款　绍　卷　齐　伟　蒸　殖　永　宗　苗　川　炉　岩　弱　零　杨　奏　沿　露　杆　探　滑　镇　饭　浓　航　怀　赶　库　夺　伊　灵　税　了　途　灭　赛　归　召　鼓　播　盘　裁　险　康　唯　录　菌　纯　借　糖　盖　横　符　私　努　堂　域　枪　润　幅　哈　竟　熟　虫　泽　脑　壤　碳　欧　遍　侧　寨　敢　彻　虑　斜　薄　庭　都　纳　弹　饲　伸　折　麦　湿　暗　荷　瓦　塞　床　筑　恶　户　访　塔　奇　透　梁　刀　旋　迹　卡　氯　遇　份　毒　泥　退　洗　摆　灰　彩　卖　耗　夏　择　忙　铜　献　硬　予　繁　圈　雪　函　亦　抽　篇　阵　阴　丁　尺　追　堆　雄　迎　泛　爸　楼　避　谋　吨　野　猪　旗　累　偏　典　馆　索　秦　脂　潮　爷　豆　忽　托　惊　塑　遗　愈　朱　替　纤　粗　倾　尚　痛　楚　谢　奋　购　磨　君　池　旁　碎　骨　监　捕　弟　暴　割　贯　殊　释　词　亡　壁　顿　宝　午　尘　闻　揭　炮　残　冬　桥　妇　警　综　招　吴　付　浮　遭　徐　您　摇　谷　赞　箱　隔　订　男　吹　乐　园　纷　唐　败　宋　玻　巨　耕　坦　荣　闭　湾　键　凡　驻　锅　救　恩　剥　凝　碱　齿　截　炼　麻　纺　禁　废　盛　版　缓　净　睛　昌　婚　涉　筒　嘴　插　岸　朗　庄　街　藏　姑　贸　腐　奴　啦　惯　乘　伙　恢　匀　纱　扎　辩　耳　彪　臣　亿　璃　抵　脉　秀　萨　俄　网　舞　店　喷　纵　寸　汗　挂　洪　着　贺　闪　柬　爆　烯　津　稻　墙　软　勇　像　滚　厘　蒙　芳　肯　坡　柱　荡　腿　仪　旅　尾　轧　冰　贡　登　黎　削　钻　勒　逃　障　氨　郭　峰　币　港　伏　轨　亩　毕　擦　莫　刺　浪　秘　援　株　健　售　股　岛　甘　泡　睡　童　铸　汤　阀　休　汇　舍　牧　绕　炸　哲　磷　绩　朋　淡　尖　启　陷　柴　呈　徒　颜　泪　稍　忘　泵　蓝　拖　洞　授　镜　辛　壮　锋　贫　虚　弯　摩　泰　幼　廷　尊　窗　纲　弄　隶　疑　氏　宫　姐　震　瑞　怪　尤　琴　循　描　膜　违　夹　腰　缘　珠　穷　森　枝　竹　沟　催　绳　忆　邦　剩　幸　浆　栏　拥　牙　贮　礼　滤　钠　纹　弹　罢　拍　咱　喊　袖　埃　勤　罚　焦　潜　伍　墨　欲　缝　姓　刊　饱　仿　奖　铝　鬼　丽　跨　默　挖　链　扫　喝　袋　炭　污　幕　诸　弧　励　梅　奶　洁　灾　舟　鉴　苯　讼　抱　毁　率　懂　寒　智　埔　寄　届　跃　渡　挑　丹　艰　贝　碰　拔　爹　戴　码　梦　芽　熔　赤　渔　哭　敬　颗　奔　藏　铅　熟　仲　虎　稀　妹　乏　珍　申　桌　遵　允　隆　螺　仓　魏　锐　晓　氮　兼　隐　碍　赫　拨　忠　肃　缸　牵　抢　博　巧　壳　兄　杜　讯　诚　碧　祥　柯　页　巡　矩　悲　灌　龄　伦　票　寻　桂　铺　圣　恐　恰　郑　趣　抬　荒　腾　贴　柔　滴　猛　阔　辆　妻　填　撤　储　签　闹　扰　紫　砂　递　戏　吊　陶　伐　喂　疗　瓶　婆　抚　臂　摸　忍　虾　蜡　邻　胸　巩　挤　偶　弃　槽　劲　乳　邓　吉　仁　烂　砖　租　乌　舰　伴　瓜　浅　丙　暂　燥　橡　柳　迷　暖　牌　纤　秧　胆　详　簧　踏　瓷　谱　呆　宾　糊　洛　辉　愤　竞　隙　怒　粘　乃　绪　肩　籍　敏　涂　熙　皆　侦　悬　掘　享　纠　醒　狂　锁　淀　恨　牲　霸　爬　赏　逆　玩　陵　祝　秒　浙　貌　役　彼　悉　鸭　着　趋　凤　晨　畜　辈　秩　卵　署　梯　炎　滩　棋　驱　筛　峡　冒　啥　寿　译　浸　泉　帽　迟　硅　疆　贷　漏　稿　冠　嫩　胁　芯　牢　叛　蚀　奥　鸣　岭　羊　凭　串　塘　绘　酵　融　盆　锡　庙　筹　冻　辅　摄　袭　筋　拒　僚　旱　钾　鸟　漆　沈　眉　疏　添　棒　穗　硝　韩　逼　扭　侨　凉

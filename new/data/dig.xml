@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dig>
+	<tile id="dirt" cost="0" />
+	<tile id="grass" cost="0" />
+	<tile id="dirt_sand1" cost="0" />
+	<tile id="dirt_sand2" cost="0" />
+	<tile id="dirt_sand3" cost="0" />
+	<tile id="stone" cost="1" />
+	<ore id="diamond" achievement="diamond" />
+</dig>

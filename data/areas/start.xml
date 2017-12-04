@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<areas>
+	<area id="start" width="96" height="96" top="grass" high="dirt" low="stone" bottom="stone">
+		<shore x="96" top="sand_top" bottom="sand" trans1="dirt_sand1" trans2="dirt_sand3" />
+		<shore x="-1" top="sand_top" bottom="sand" trans1="dirt_sand1" trans2="dirt_sand2" flip="true" />
+		<action>
+			for(x in 90...94) setTile(x, 1, "stone");
+			for(x in 86...90) setTile(x, 2, "stone"); for(x in 90...94) mine(x, 2, 2, "stone"); setTile(94, 2, "stone");
+			for(y in 3...6){
+				setTile(85, y, "stone"); for(x in 86...94) mine(x, y, 2, "stone"); setTile(94, y, "stone");
+			} for(x in 86...94) setTile(x, 6, "stone"); mine(92, 1);
+		</action>
+		<ore id="quartz" start="0.4" end="0.5" percent="0.0025" />
+		<ore id="iron" start="0.2" end="0.5" percent="0.0125" />
+		<ore id="iron" start="0.1" end="0.2" percent="0.000625" />
+		<ore id="coal" start="0.0" end="0.4" percent="0.0375" />
+		<ore id="diamond" start="0.9" end="1.0" percent="0.0025" />
+		<ore id="gold" start="0.5" end="1.0" percent="0.0125" />
+		<ore id="gold" start="0.4" end="0.5" percent="0.000625" />
+		<ore id="iron" start="0.5" end="0.9" percent="0.0375" />
+		<player id="player.ancient" x="31" y="-1">
+			<addItem id="meat" count="2" />
+		</player>
+		<object id="alchemist" x="90" y="5" />
+		<objects id="tree" y="-1" startX="35" endX="92" minDist="6" maxDist="9" array="right" />
+		<objects id="tree" y="-1" startX="32" endX="4" minDist="-6" maxDist="-9" array="left" />
+		<objects id="wood" y="-1" between="left" pos="0.5" percent="0.25" />
+		<objects id="wood" y="-1" between="right" pos="0.5" percent="0.25" />
+		<objects id="wyrm" start="0.1" end="0.4" percent="0.0002" />
+		<objects id="golem" start="0.5" end="1.0" percent="0.0075" />
+		<object id="bush" x="39" y="-1" />
+		<object id="red_bush" x="30" y="-1" />
+		<objects id="bush" y="-1" between="left" pos="0.25" altPos="0.75" percent="0.5" />
+		<objects id="bush" y="-1" between="right" pos="0.25" altPos="0.75" percent="0.5" />
+		<objects id="red_bush" y="-1" between="left" pos="0.25" altPos="0.75" percent="0.5" />
+		<objects id="red_bush" y="-1" between="right" pos="0.25" altPos="0.75" percent="0.5" />
+		<objects id="wood" y="-1" fromArray="left" toArray="right" exclude="31" count="8" />
+		<objects id="rat" startX="0" endX="95" minDist="15" maxDist="25" />
+		<spawner id="rat" time="1000" count="6" fromX="0" toX="95" fromY="-1" toY="-1" />
+		<spawner id="boar" time="2000" count="5" fromX="0" toX="95" fromY="-1" toY="-1" />
+		<spawner id="wyrm" time="4000" count="1" fromX="1" toX="94" fromY="3" toY="32" />
+		<init>
+			<storm start="200" power="6" />
+			<quest id="hut" ask="false" />
+			<dialogue section="player" id="storm1" />
+			<dialogue section="player" id="storm2" />
+			<event overweight="true" once="true">
+				<dialogue section="player" id="storm3" />
+			</event>
+			<event canComplete="hut" once="true">
+				<killEvents />
+				<complete quest="hut" />
+				<sound id="build" />
+				<scene id="hut" show="first" with="fade">
+					<action>player.fullRestore(); mine(92, 0);</action>
+					<structure id="hut" x="34" />
+					<move object="player" x="37" />
+					<storm stop="0" />
+					<save />
+					<runAreaLoad />
+				</scene>
+			</event>
+		</init>
+		<onLoad>
+			<tile id="seagull" animation="seagull.walk" x="Math.random()*5" />
+			<tile id="seagull" animation="seagull.walk" x="90+Math.random()*5" />
+			<tile id="seagull" animation="seagull.fly" x="-Math.random()*5" y="-2" />
+			<tile id="seagull" animation="seagull.fly" x="-Math.random()*5-1" y="-4" />
+			<tile id="seagull" animation="seagull.fly" x="95+Math.random()*5" y="-2" />
+			<tile id="seagull" animation="seagull.fly" x="96+Math.random()*5" y="-4" />
+			<tile id="redbreast" type="bird" x="Math.random()*23" fromX="0" toX="95" />
+			<tile id="redbreast" type="bird" x="23+Math.random()*23" fromX="0" toX="95" />
+			<tile id="redbreast" type="bird" x="46+Math.random()*23" fromX="0" toX="95" />
+			<tile id="redbreast" type="bird" x="69+Math.random()*23" fromX="0" toX="95" />
+			<music id="no_boundaries" />
+		</onLoad>
+	</area>
+</areas>

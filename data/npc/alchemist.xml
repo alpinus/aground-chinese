@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<npcs>
+	<npc id="alchemist" tile="alchemist" action="talk" animation="alchemist" talk_sfx="talking1">
+		<section if="!player.hasQuest('lab')">
+			<dialogue section="alchemist" id="introduce1" speaker='this' />
+			<dialogue section="alchemist" id="introduce2" speaker='this' />
+			<quest id="lab" />
+			<action>this.playAnimation("quest")</action>
+		</section>
+		<choose if="!player.questComplete('lab')">
+			<section if="player.canCompleteQuest('lab')">
+				<dialogue section="alchemist" id="lab1" speaker='this' />
+				<complete quest="lab" />
+				<sound id="build" />
+				<structure id="lab" x="this.tile_x" y="this.tile_y" with="fade" />
+				<dialogue section="alchemist" id="lab2" speaker='this' />
+			</section>
+			<dialogue section="alchemist" id="lab3" speaker='this' />
+		</choose>
+		<choose if="player.getItemCount('coin_purse') > 0">
+			<section if="!player.hasQuest('wyrm_pen')">
+				<dialogue section="alchemist" id="pen1" speaker='this' />
+				<quest id="wyrm_pen" />
+			</section>
+			<choose if="!player.questComplete('wyrm_pen')">
+				<section if="player.canCompleteQuest('wyrm_pen')">
+					<dialogue section="alchemist" id="pen2" speaker='this' />
+					<complete quest="wyrm_pen" />
+					<sound id="build" />
+					<structure id="wyrm_pen" x="this.tile_x-4" y="this.tile_y" with="fade" />
+					<dialogue section="alchemist" id="pen3" speaker='this' />
+				</section>
+				<dialogue section="alchemist" id="wyrm" speaker='this' />
+			</choose>
+			<dialogue section="alchemist" id="pen3" speaker='this' />
+		</choose>
+		<dialogue section="alchemist" id="lab2" speaker='this' />
+	</npc>
+</npcs>

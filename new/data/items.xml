@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<items>
+	<icon id="resource" tile="wood.ico" />
+	<icon id="food" tile="meat.ico" />
+	<icon id="equipment" tile="stone_axe.ico" />
+	<icon id="misc" tile="cloth.ico" />
+	
+	<item id="wood" type="resource" cost="5" weight="3" tile="wood.ico" />
+	<item id="coal" type="resource" cost="10" weight="5" tile="coal.ico" />
+	<item id="iron" type="resource" cost="20" weight="5" tile="iron.ico" />
+	<item id="quartz" type="resource" cost="40" weight="5" tile="quartz.ico" />
+	<item id="gold" type="resource" cost="100" weight="5" tile="gold.ico" />
+	<item id="diamond" type="resource" cost="300" weight="5" tile="diamond.ico" />
+	<item id="sulfur" type="resource" cost="50" weight="5" tile="sulfur.ico" />
+	<item id="oil" type="resource" cost="100" weight="5" tile="oil.ico" />
+	<item id="titanium" type="resource" cost="150" weight="5" tile="titanium.ico" />
+	<item id="uranium" type="resource" cost="350" weight="5" tile="uranium.ico" />
+	
+	<item id="iron_bar" type="resource" cost="50" weight="5" tile="iron_bar.ico" />
+	<item id="steel_bar" type="resource" cost="75" weight="5" tile="steel_bar.ico" />
+	<item id="gold_bar" type="resource" cost="250" weight="5" tile="gold_bar.ico" />
+	
+	<item id="meat" type="food" cost="10" weight="1" health="10" tile="meat.ico" />
+	<item id="fruit" type="food" cost="10" weight="1" stamina="20" tile="fruit.ico" />
+	<item id="wheat" type="food" cost="5" weight="1" stamina="6" tile="wheat.ico" />
+	<item id="eggs" type="food" cost="10" weight="1" health="10" tile="eggs.ico" />
+	<item id="milk" type="food" cost="12" weight="1" health="6" stamina="6" tile="milk.ico" />
+	<item id="sugar" type="food" cost="40" weight="1" stamina="10" tile="sugar.ico" />
+	<item id="steak" type="food" cost="20" weight="1" health="20" tile="steak.ico" />
+	<item id="bread" type="food" cost="15" weight="1" stamina="20" tile="bread.ico" />
+	<item id="pancakes" type="food" cost="50" weight="1" stamina="40" health="20" tile="pancakes.ico" />
+	<item id="hamburger" type="food" cost="50" weight="1" health="40" tile="hamburger.ico" />
+	<item id="pie" type="food" cost="30" weight="1" stamina="30" tile="pie.ico" />
+	<item id="berries" type="food" cost="4" weight="1" stamina="10" tile="berries.ico" />
+	<item id="red_berries" type="food" cost="8" weight="1" health="-5" attack="1" tile="red_berries.ico" />
+	<item id="cheese" type="food" cost="30" weight="1" stamina="15" health="15" tile="cheese.ico" />
+	<item id="pizza" type="food" cost="50" weight="1" stamina="50" health="30" tile="pizza.ico" />
+	<item id="omelette" type="food" cost="75" weight="1" health="70" tile="omelette.ico" />
+	<item id="cheeseburger" type="food" cost="90" weight="1" stamina="50" health="50" tile="cheeseburger.ico" />
+	<item id="cake" type="food" cost="100" weight="1" stamina="100" tile="cake.ico" />
+	<item id="candy_apple" type="food" cost="75" weight="1" stamina="50" tile="candy_apple.ico" />
+	<item id="dragonblood" type="food" cost="250" weight="1" health="100" stamina="100" tile="dragonblood.ico" />
+	<item id="health_potion" type="food" cost="300" weight="1" max_health="10" tile="health_potion.ico" />
+	<item id="stamina_potion" type="food" cost="300" weight="1" max_stamina="20" tile="stamina_potion.ico" />
+	<item id="attack_potion" type="food" cost="50" weight="1" attack="2" tile="attack_potion.ico" />
+	<item id="defense_potion" type="food" cost="50" weight="1" defense="2" tile="defense_potion.ico" />
+	<item id="speed_potion" type="food" cost="300" weight="1" speed="1" tile="speed_potion.ico" />
+	<item id="endurance_potion" type="food" cost="300" weight="1" endurance="1" tile="endurance_potion.ico" />
+	<item id="stone_axe" type="equipment" cost="0" weight="0" cut="1" attack="1" stamina="3" tile="stone_axe.ico" action="equip" />
+	<item id="stone_pickaxe" type="equipment" cost="0" weight="0" mine="1" stamina="3" tile="stone_pickaxe.ico" />
+	<item id="coin_purse" type="equipment" cost="0" weight="0" tile="coin_purse.ico" />
+	<item id="iron_pickaxe" type="equipment" cost="150" weight="10" mine="2" stamina="3" tile="iron_pickaxe.ico" />
+	<item id="iron_sword" type="equipment" cost="100" weight="8" attack="2" stamina="2" tile="iron_sword.ico" action="equip" />
+	<item id="iron_armor" type="equipment" cost="200" weight="15" defense="1" tile="iron_armor.ico" />
+	<item id="steel_pickaxe" type="equipment" cost="225" weight="5" mine="2" stamina="1" tile="steel_pickaxe.ico" />
+	<item id="steel_sword" type="equipment" cost="150" weight="6" attack="3" stamina="2" tile="steel_sword.ico" action="equip" />
+	<item id="steel_armor" type="equipment" cost="300" weight="12" defense="2" tile="steel_armor.ico" />
+	<item id="backpack" type="equipment" cost="50" weight="0" capacity="100" tile="backpack.ico" />
+	<item id="mega_backpack" type="equipment" cost="250" weight="0" capacity="150" tile="backpack.ico" />
+	<item id="magic_backpack" type="equipment" cost="0" weight="0" capacity="999" tile="backpack.ico" />
+	<item id="bow" type="equipment" cost="75" weight="4" stamina="3" tile="bow.ico" range="7" action="equip" projectile="arrow" delay="8" />
+	<item id="arrow" type="equipment" cost="5" weight="1" tile="arrow.ico" attack="2" speed="6" action="fire" with="bow" />
+	
+	<item id="cloth" type="misc" cost="20" weight="1" tile="cloth.ico" />
+	<item id="net" type="misc" cost="40" weight="1" tile="net.ico" action="place" />
+	<item id="pig" type="misc" cost="75" weight="2" tile="pig.ico" animation="pig" />
+	<item id="wyrm" type="misc" cost="300" weight="4" tile="wyrm.ico" />
+	<item id="cocoon" type="misc" cost="300" weight="4" tile="cocoon.ico" animation="cocoon" />
+	<item id="dragon" type="misc" cost="400" weight="4" tile="dragon.ico" />
+	<item id="magic_box" type="misc" cost="0" weight="0" tile="magic_box.ico" animation="magic_box" action="magic_box" />
+	<item id="boat" type="misc" cost="0" weight="0" tile="boat.ico" />
+	<item id="fence" type="misc" cost="10" weight="2" tile="fence.ico" action="place" />
+	<item id="torch" type="misc" cost="15" weight="1" tile="torch.ico" animation="torch" light="20" action="use" />
+	<item id="trap" type="misc" cost="30" weight="1" tile="trap.ico" action="place" />
+</items>

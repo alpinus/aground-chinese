@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<npcs>
+	<npc id="miner" tile="miner" action="talk" talk_sfx="talking2" idle="mineOre">
+		<section if="player.getItemCount('stone_pickaxe') == 0">
+			<quest />
+			<dialogue section="miner" id="introduce1" speaker='this' />
+			<dialogue section="miner" id="introduce2" speaker='this' />
+			<dialogue section="miner" id="introduce3" speaker='this' />
+			<item id="stone_pickaxe" modal="true" />
+			<dialogue section="miner" id="hotkey" speaker='this' />
+		</section>
+		<group if="!getFlag('miner_hut')">
+			<dialogue section="miner" id="hint1" speaker='this' />
+			<dialogue section="miner" id="hint4" speaker='this' />
+			<dialogue section="miner" id="hint2" speaker='this' />
+			<dialogue section="miner" id="hint3" speaker='this' />
+		</group>
+		<section if="!player.hasQuest('smelter')">
+			<dialogue section="miner" id="smelter" speaker='this' />
+			<quest id="smelter">
+				<dialogue section="miner" id="accept1" speaker='this' />
+			</quest>
+		</section>
+		<choose if="!player.questComplete('smelter')">
+			<section if="player.canCompleteQuest('smelter')">
+				<dialogue section="miner" id="smelter1" speaker='this' />
+				<complete quest="smelter" />
+				<sound id="build" />
+				<section with="fade">
+					<move object="this" x="22" />
+					<move object="player" x="22" />
+					<object id="farmer" x="this.tile_x+24" />
+					<structure id="smelter" x="this.tile_x" />
+				</section>
+				<dialogue section="miner" id="smelter2" speaker='this' />
+			</section>
+			<group>
+				<dialogue section="miner" id="hint1" speaker='this' />
+				<dialogue section="miner" id="hint4" speaker='this' />
+				<dialogue section="miner" id="hint2" speaker='this' />
+				<dialogue section="miner" id="hint3" speaker='this' />
+			</group>
+		</choose>
+		<group if="!player.questComplete('farm')">
+			<dialogue section="miner" id="hint1" speaker='this' />
+			<dialogue section="miner" id="hint4" speaker='this' />
+			<dialogue section="miner" id="hint2" speaker='this' />
+			<dialogue section="miner" id="hint3" speaker='this' />
+		</group>
+		<section if="!player.hasQuest('workshop')">
+			<dialogue section="miner" id="workshop1" speaker='this' />
+			<quest id="workshop" />
+		</section>
+		<choose if="!player.questComplete('workshop')">
+			<section if="player.canCompleteQuest('workshop')">
+				<dialogue section="miner" id="workshop2" speaker='this' />
+				<complete quest="workshop" />
+				<sound id="build" />
+				<section with="fade">
+					<move object="this" x="16" />
+					<move object="player" x="16" />
+					<structure id="workshop" x="this.tile_x" />
+				</section>
+				<dialogue section="miner" id="workshop3" speaker='this' />
+			</section>
+			<group>
+				<dialogue section="miner" id="workshop4" speaker='this' />
+				<dialogue section="miner" id="smelter3" speaker='this' />
+				<dialogue section="miner" id="smelter4" speaker='this' />
+			</group>
+		</choose>
+		<group>
+			<dialogue section="miner" id="pick" if="player.getItemCount('iron_pickaxe') == 0 && player.getItemCount('steel_pickaxe') == 0" speaker='this' />
+			<dialogue section="miner" id="equip" speaker='this' />
+		</group>
+	</npc>
+</npcs>

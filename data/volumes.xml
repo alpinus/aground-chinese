@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<volumes>
+	<volume name="rain" value="50" />
+	<volume name="game_over" value="50" />
+	<volume name="low_hp" value="50" />
+	<volume name="tree_felled" value="200" />
+</volumes>

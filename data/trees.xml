@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<trees>
+	<tilesheet id="tree1.png" width="16" height="8" />
+	<tilesheet id="tree2.png" width="20" height="21" />
+	<tilesheet id="tree3.png" width="100" height="80" />
+	<tree id="tree" health="5" loot="wood" min="3" max="5" collect="2" grown="3" speed="0.002">
+		<loot p="4" />
+		<loot id="milk" p="1" />
+		<loot id="fruit" p="16" />
+		<tile sheet="tree1.png" x="0" y="0" />
+		<tile sheet="tree1.png" x="0" y="1" />
+		<tile sheet="tree2.png" x="0" y="0" />
+		<tile sheet="tree3.png" x="2" y="2" />
+		<tile sheet="tree3.png" x="0" y="0" />
+	</tree>
+	<bush id="bush" loot="berries" min="1" max="2" grown="3" speed="0.01">
+		<tile sheet="bush.png" x="1" y="1" />
+		<tile sheet="bush.png" x="0" y="1" />
+		<tile sheet="bush.png" x="1" y="0" />
+		<tile sheet="bush.png" x="0" y="0" />
+	</bush>
+	<tilesheet id="red_bush.png" width="8" height="8" />
+	<bush id="red_bush" loot="red_berries" min="1" max="2" grown="4" speed="0.008">
+		<tile sheet="red_bush.png" x="0" y="4" />
+		<tile sheet="red_bush.png" x="0" y="3" />
+		<tile sheet="red_bush.png" x="0" y="2" />
+		<tile sheet="red_bush.png" x="0" y="1" />
+		<tile sheet="red_bush.png" x="0" y="0" />
+	</bush>
+</trees>
